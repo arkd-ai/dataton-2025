@@ -1,0 +1,13 @@
+# Procesamiento de datos y CSVs
+pandas==2.3.3
+openpyxl==3.1.5
+numpy==2.2.6
+
+# Base de Datos y Transformación
+duckdb==1.4.2
+dbt-duckdb==1.10.0
+dbt-core==1.10.15
+
+# Exploración y SQL IDE
+harlequin==2.4.1
+shandy-sqlfmt==0.28.2  # Formateador SQL para Harlequin

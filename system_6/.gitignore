@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# Datos Crudos (JSON)
+PDN_S6/*.json
+PDN_S6/*.xlsx
+
+# Salidas Generadas (CSV y DB)
+csv_outputs/
+*.duckdb
+*.db
+
+# dbt
+dbt_project/target/
+dbt_project/dbt_packages/
+dbt_project/logs/
+.user.yml
+
+# Editor
+.vscode/
+.idea/
+.DS_Store

@@ -1,0 +1,7 @@
+dataton_puebla:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: '/home/arkade/Documents/github/dataton-2025/system_6/csv_outputs/dataton.duckdb'
+      threads: 4

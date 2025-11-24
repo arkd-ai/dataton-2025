@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: raw_data
+    schema: main
+    meta:
+      # Patrón glob para leer archivos de todos los subdirectorios de estados
+      external_location: "/home/arkade/Documents/github/dataton-2025/system_6/csv_outputs/*/{name}.csv"
+    tables:
+      - name: general
+      - name: items
+      - name: parties
+      - name: awards
+      - name: contracts
