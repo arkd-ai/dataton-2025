@@ -1,14 +1,13 @@
 # Python
 __pycache__/
 *.pyc
-venv/
+*venv/
 
 # Datos Crudos (JSON)
-PDN_S6/*.json
-PDN_S6/*.xlsx
+*PDN_S*
 
 # Salidas Generadas (CSV y DB)
-csv_outputs/
+*csv_outputs/
 *.duckdb
 *.db
 
