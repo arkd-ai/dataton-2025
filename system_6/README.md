@@ -67,7 +67,7 @@ Este proyecto incluye **Harlequin**, un IDE SQL para la terminal que permite exp
 Para iniciar Harlequin y conectarte a la base de datos procesada:
 
 ```bash
-harlequin csv_outputs/dataton.duckdb
+harlequin system_6/csv_outputs/dataton.duckdb
 ```
 
 Dentro de Harlequin podrás:
