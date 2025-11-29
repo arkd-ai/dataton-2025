@@ -1621,3 +1621,1154 @@ alter table "dataton_s1"."main"."s1_dataset_maestro__dbt_tmp" rename to "s1_data
 [0m06:13:35.196625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77150c55f170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77150ba85700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77150cb61be0>]}
 [0m06:13:35.196952 [debug] [MainThread]: Flushing usage events
 [0m06:13:35.509333 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:57:16.146150 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4dd6d54440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4dd5f11850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4dd5531a30>]}
+
+
+============================== 07:57:16.149113 | 4d7e2418-208d-4050-859d-9a6a57761cfe ==============================
+[0m07:57:16.149113 [info ] [MainThread]: Running with dbt=1.10.15
+[0m07:57:16.149634 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'empty': 'None', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'invocation_command': 'dbt debug', 'no_print': 'None', 'profiles_dir': '/home/arkade/Documents/github/dataton-2025/system_1/dbt_project', 'fail_fast': 'False', 'cache_selected_only': 'False', 'use_colors': 'True', 'partial_parse': 'True', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'use_experimental_parser': 'False', 'printer_width': '80', 'log_path': '/home/arkade/Documents/github/dataton-2025/system_1/dbt_project/logs', 'indirect_selection': 'eager', 'quiet': 'False', 'debug': 'False', 'log_format': 'default'}
+[0m07:57:16.159356 [info ] [MainThread]: dbt version: 1.10.15
+[0m07:57:16.159720 [info ] [MainThread]: python version: 3.12.3
+[0m07:57:16.160052 [info ] [MainThread]: python path: /home/arkade/Documents/github/dataton-2025/venv/bin/python3
+[0m07:57:16.160373 [info ] [MainThread]: os info: Linux-6.8.0-88-generic-x86_64-with-glibc2.39
+[0m07:57:16.311340 [info ] [MainThread]: Using profiles dir at /home/arkade/Documents/github/dataton-2025/system_1/dbt_project
+[0m07:57:16.311809 [info ] [MainThread]: Using profiles.yml file at /home/arkade/Documents/github/dataton-2025/system_1/dbt_project/profiles.yml
+[0m07:57:16.312125 [info ] [MainThread]: Using dbt_project.yml file at /home/arkade/Documents/github/dataton-2025/system_1/dbt_project/dbt_project.yml
+[0m07:57:16.313567 [info ] [MainThread]: adapter type: duckdb
+[0m07:57:16.313874 [info ] [MainThread]: adapter version: 1.10.0
+[0m07:57:16.395624 [info ] [MainThread]: Configuration:
+[0m07:57:16.396059 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m07:57:16.396367 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m07:57:16.396646 [info ] [MainThread]: Required dependencies:
+[0m07:57:16.396947 [debug] [MainThread]: Executing "git --help"
+[0m07:57:16.399007 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m07:57:16.399333 [debug] [MainThread]: STDERR: "b''"
+[0m07:57:16.399595 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m07:57:16.400127 [info ] [MainThread]: Connection:
+[0m07:57:16.400602 [info ] [MainThread]:   database: dataton_s1
+[0m07:57:16.400985 [info ] [MainThread]:   schema: main
+[0m07:57:16.401359 [info ] [MainThread]:   path: /home/arkade/Documents/github/dataton-2025/system_1/csv_outputs/dataton_s1.duckdb
+[0m07:57:16.401657 [info ] [MainThread]:   config_options: None
+[0m07:57:16.401923 [info ] [MainThread]:   extensions: None
+[0m07:57:16.402205 [info ] [MainThread]:   settings: {}
+[0m07:57:16.402468 [info ] [MainThread]:   external_root: .
+[0m07:57:16.402728 [info ] [MainThread]:   use_credential_provider: None
+[0m07:57:16.403011 [info ] [MainThread]:   attach: None
+[0m07:57:16.403281 [info ] [MainThread]:   filesystems: None
+[0m07:57:16.403535 [info ] [MainThread]:   remote: None
+[0m07:57:16.403791 [info ] [MainThread]:   plugins: None
+[0m07:57:16.404099 [info ] [MainThread]:   disable_transactions: False
+[0m07:57:16.404492 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m07:57:16.473526 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m07:57:16.495210 [debug] [MainThread]: Using duckdb connection "debug"
+[0m07:57:16.495586 [debug] [MainThread]: On debug: select 1 as id
+[0m07:57:16.495869 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m07:57:16.512815 [debug] [MainThread]: SQL status: OK in 0.017 seconds
+[0m07:57:16.513710 [debug] [MainThread]: On debug: Close
+[0m07:57:16.514075 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m07:57:16.514473 [info ] [MainThread]: [32mAll checks passed![0m
+[0m07:57:16.515543 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.41386813, "process_in_blocks": "114696", "process_kernel_time": 0.233586, "process_mem_max_rss": "138064", "process_out_blocks": "24", "process_user_time": 1.310904}
+[0m07:57:16.515964 [debug] [MainThread]: Command `dbt debug` succeeded at 07:57:16.515853 after 0.41 seconds
+[0m07:57:16.516271 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m07:57:16.516599 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4dcb2642c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4dd53e56a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4dcb1fba70>]}
+[0m07:57:16.517204 [debug] [MainThread]: Flushing usage events
+[0m07:57:16.833812 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:57:31.324068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77f85c210da0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77f85ce10d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77f85c03fbc0>]}
+
+
+============================== 07:57:31.326609 | 8f6e4bba-426e-447b-a94f-b1a41709ea30 ==============================
+[0m07:57:31.326609 [info ] [MainThread]: Running with dbt=1.10.15
+[0m07:57:31.327053 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'static_parser': 'True', 'indirect_selection': 'eager', 'introspect': 'True', 'quiet': 'False', 'log_path': '/home/arkade/Documents/github/dataton-2025/system_1/dbt_project/logs', 'target_path': 'None', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'partial_parse': 'True', 'empty': 'False', 'printer_width': '80', 'invocation_command': 'dbt run', 'version_check': 'True', 'fail_fast': 'False', 'warn_error': 'None', 'write_json': 'True', 'profiles_dir': '/home/arkade/Documents/github/dataton-2025/system_1/dbt_project', 'log_cache_events': 'False', 'use_colors': 'True', 'cache_selected_only': 'False'}
+[0m07:57:31.500180 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8f6e4bba-426e-447b-a94f-b1a41709ea30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77f85b0d6c60>]}
+[0m07:57:31.550989 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8f6e4bba-426e-447b-a94f-b1a41709ea30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77f85c03eea0>]}
+[0m07:57:31.552792 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m07:57:31.624096 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m07:57:31.690593 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 7 files added, 0 files changed.
+[0m07:57:31.691191 [debug] [MainThread]: Partial parsing: added file: dataton_s1://models/staging/stg_s1_prestamo_comodato.sql
+[0m07:57:31.691533 [debug] [MainThread]: Partial parsing: added file: dataton_s1://models/staging/stg_s1_dependientes_economicos.sql
+[0m07:57:31.691827 [debug] [MainThread]: Partial parsing: added file: dataton_s1://models/staging/stg_s1_datos_pareja.sql
+[0m07:57:31.692164 [debug] [MainThread]: Partial parsing: added file: dataton_s1://models/staging/stg_s1_inversiones.sql
+[0m07:57:31.692458 [debug] [MainThread]: Partial parsing: added file: dataton_s1://models/staging/stg_s1_experiencia_laboral.sql
+[0m07:57:31.692747 [debug] [MainThread]: Partial parsing: added file: dataton_s1://models/staging/stg_s1_adeudos_pasivos.sql
+[0m07:57:31.693018 [debug] [MainThread]: Partial parsing: added file: dataton_s1://models/staging/stg_s1_bienes_muebles.sql
+[0m07:57:31.895709 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8f6e4bba-426e-447b-a94f-b1a41709ea30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77f85119c2f0>]}
+[0m07:57:31.936357 [debug] [MainThread]: Wrote artifact WritableManifest to /home/arkade/Documents/github/dataton-2025/system_1/dbt_project/target/manifest.json
+[0m07:57:31.937910 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/arkade/Documents/github/dataton-2025/system_1/dbt_project/target/semantic_manifest.json
+[0m07:57:31.948771 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8f6e4bba-426e-447b-a94f-b1a41709ea30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77f8511be450>]}
+[0m07:57:31.949421 [info ] [MainThread]: Found 19 models, 468 macros
+[0m07:57:31.949913 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8f6e4bba-426e-447b-a94f-b1a41709ea30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77f851147410>]}
+[0m07:57:31.952516 [info ] [MainThread]: 
+[0m07:57:31.952980 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m07:57:31.953388 [info ] [MainThread]: 
+[0m07:57:31.953957 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m07:57:31.959025 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_dataton_s1'
+[0m07:57:31.986350 [debug] [ThreadPool]: Using duckdb connection "list_dataton_s1"
+[0m07:57:31.986755 [debug] [ThreadPool]: On list_dataton_s1: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "connection_name": "list_dataton_s1"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"dataton_s1"'
+    
+  
+  
+[0m07:57:31.987058 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m07:57:32.000582 [debug] [ThreadPool]: SQL status: OK in 0.013 seconds
+[0m07:57:32.001693 [debug] [ThreadPool]: On list_dataton_s1: Close
+[0m07:57:32.002319 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataton_s1, now create_dataton_s1_main)
+[0m07:57:32.002713 [debug] [ThreadPool]: Creating schema "database: "dataton_s1"
+schema: "main"
+"
+[0m07:57:32.008216 [debug] [ThreadPool]: Using duckdb connection "create_dataton_s1_main"
+[0m07:57:32.008523 [debug] [ThreadPool]: On create_dataton_s1_main: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "connection_name": "create_dataton_s1_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='dataton_s1'
+        and type='sqlite'
+    
+  
+[0m07:57:32.008855 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m07:57:32.009680 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m07:57:32.010603 [debug] [ThreadPool]: Using duckdb connection "create_dataton_s1_main"
+[0m07:57:32.010878 [debug] [ThreadPool]: On create_dataton_s1_main: BEGIN
+[0m07:57:32.011311 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m07:57:32.011616 [debug] [ThreadPool]: Using duckdb connection "create_dataton_s1_main"
+[0m07:57:32.011893 [debug] [ThreadPool]: On create_dataton_s1_main: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "connection_name": "create_dataton_s1_main"} */
+
+    
+    
+        create schema if not exists "dataton_s1"."main"
+    
+[0m07:57:32.012442 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m07:57:32.013059 [debug] [ThreadPool]: On create_dataton_s1_main: COMMIT
+[0m07:57:32.013337 [debug] [ThreadPool]: Using duckdb connection "create_dataton_s1_main"
+[0m07:57:32.013663 [debug] [ThreadPool]: On create_dataton_s1_main: COMMIT
+[0m07:57:32.014131 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m07:57:32.014425 [debug] [ThreadPool]: On create_dataton_s1_main: Close
+[0m07:57:32.016429 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_dataton_s1_main, now list_dataton_s1_main)
+[0m07:57:32.024159 [debug] [ThreadPool]: Using duckdb connection "list_dataton_s1_main"
+[0m07:57:32.024524 [debug] [ThreadPool]: On list_dataton_s1_main: BEGIN
+[0m07:57:32.024795 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m07:57:32.025576 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m07:57:32.025858 [debug] [ThreadPool]: Using duckdb connection "list_dataton_s1_main"
+[0m07:57:32.026143 [debug] [ThreadPool]: On list_dataton_s1_main: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "connection_name": "list_dataton_s1_main"} */
+select
+      'dataton_s1' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'dataton_s1'
+  
+[0m07:57:32.036780 [debug] [ThreadPool]: SQL status: OK in 0.010 seconds
+[0m07:57:32.038538 [debug] [ThreadPool]: On list_dataton_s1_main: ROLLBACK
+[0m07:57:32.039808 [debug] [ThreadPool]: Failed to rollback 'list_dataton_s1_main'
+[0m07:57:32.040108 [debug] [ThreadPool]: On list_dataton_s1_main: Close
+[0m07:57:32.041595 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8f6e4bba-426e-447b-a94f-b1a41709ea30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77f85b1215e0>]}
+[0m07:57:32.041985 [debug] [MainThread]: Using duckdb connection "master"
+[0m07:57:32.042258 [debug] [MainThread]: On master: BEGIN
+[0m07:57:32.042499 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m07:57:32.042967 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m07:57:32.043247 [debug] [MainThread]: On master: COMMIT
+[0m07:57:32.043502 [debug] [MainThread]: Using duckdb connection "master"
+[0m07:57:32.043742 [debug] [MainThread]: On master: COMMIT
+[0m07:57:32.044134 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m07:57:32.044418 [debug] [MainThread]: On master: Close
+[0m07:57:32.046640 [debug] [Thread-1 (]: Began running node model.dataton_s1.stg_s1_adeudos_pasivos
+[0m07:57:32.046969 [debug] [Thread-2 (]: Began running node model.dataton_s1.stg_s1_bienes_muebles
+[0m07:57:32.047327 [debug] [Thread-3 (]: Began running node model.dataton_s1.stg_s1_datos_pareja
+[0m07:57:32.047675 [debug] [Thread-4 (]: Began running node model.dataton_s1.stg_s1_declaraciones
+[0m07:57:32.048099 [info ] [Thread-1 (]: 1 of 17 START sql view model main.stg_s1_adeudos_pasivos ....................... [RUN]
+[0m07:57:32.048557 [info ] [Thread-2 (]: 2 of 17 START sql view model main.stg_s1_bienes_muebles ........................ [RUN]
+[0m07:57:32.049039 [info ] [Thread-3 (]: 3 of 17 START sql view model main.stg_s1_datos_pareja .......................... [RUN]
+[0m07:57:32.049595 [info ] [Thread-4 (]: 4 of 17 START sql view model main.stg_s1_declaraciones ......................... [RUN]
+[0m07:57:32.050101 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dataton_s1_main, now model.dataton_s1.stg_s1_adeudos_pasivos)
+[0m07:57:32.050507 [debug] [Thread-2 (]: Acquiring new duckdb connection 'model.dataton_s1.stg_s1_bienes_muebles'
+[0m07:57:32.050883 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.dataton_s1.stg_s1_datos_pareja'
+[0m07:57:32.051484 [debug] [Thread-4 (]: Acquiring new duckdb connection 'model.dataton_s1.stg_s1_declaraciones'
+[0m07:57:32.051918 [debug] [Thread-1 (]: Began compiling node model.dataton_s1.stg_s1_adeudos_pasivos
+[0m07:57:32.052234 [debug] [Thread-2 (]: Began compiling node model.dataton_s1.stg_s1_bienes_muebles
+[0m07:57:32.052545 [debug] [Thread-3 (]: Began compiling node model.dataton_s1.stg_s1_datos_pareja
+[0m07:57:32.052887 [debug] [Thread-4 (]: Began compiling node model.dataton_s1.stg_s1_declaraciones
+[0m07:57:32.058785 [debug] [Thread-1 (]: Writing injected SQL for node "model.dataton_s1.stg_s1_adeudos_pasivos"
+[0m07:57:32.060636 [debug] [Thread-2 (]: Writing injected SQL for node "model.dataton_s1.stg_s1_bienes_muebles"
+[0m07:57:32.062737 [debug] [Thread-3 (]: Writing injected SQL for node "model.dataton_s1.stg_s1_datos_pareja"
+[0m07:57:32.064556 [debug] [Thread-4 (]: Writing injected SQL for node "model.dataton_s1.stg_s1_declaraciones"
+[0m07:57:32.066329 [debug] [Thread-3 (]: Began executing node model.dataton_s1.stg_s1_datos_pareja
+[0m07:57:32.065666 [debug] [Thread-2 (]: Began executing node model.dataton_s1.stg_s1_bienes_muebles
+[0m07:57:32.065190 [debug] [Thread-1 (]: Began executing node model.dataton_s1.stg_s1_adeudos_pasivos
+[0m07:57:32.091121 [debug] [Thread-3 (]: Writing runtime sql for node "model.dataton_s1.stg_s1_datos_pareja"
+[0m07:57:32.094114 [debug] [Thread-2 (]: Writing runtime sql for node "model.dataton_s1.stg_s1_bienes_muebles"
+[0m07:57:32.094522 [debug] [Thread-4 (]: Began executing node model.dataton_s1.stg_s1_declaraciones
+[0m07:57:32.096979 [debug] [Thread-1 (]: Writing runtime sql for node "model.dataton_s1.stg_s1_adeudos_pasivos"
+[0m07:57:32.101823 [debug] [Thread-4 (]: Writing runtime sql for node "model.dataton_s1.stg_s1_declaraciones"
+[0m07:57:32.102779 [debug] [Thread-3 (]: Using duckdb connection "model.dataton_s1.stg_s1_datos_pareja"
+[0m07:57:32.103393 [debug] [Thread-2 (]: Using duckdb connection "model.dataton_s1.stg_s1_bienes_muebles"
+[0m07:57:32.103845 [debug] [Thread-3 (]: On model.dataton_s1.stg_s1_datos_pareja: BEGIN
+[0m07:57:32.104232 [debug] [Thread-1 (]: Using duckdb connection "model.dataton_s1.stg_s1_adeudos_pasivos"
+[0m07:57:32.104608 [debug] [Thread-2 (]: On model.dataton_s1.stg_s1_bienes_muebles: BEGIN
+[0m07:57:32.105053 [debug] [Thread-4 (]: Using duckdb connection "model.dataton_s1.stg_s1_declaraciones"
+[0m07:57:32.105403 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m07:57:32.105735 [debug] [Thread-1 (]: On model.dataton_s1.stg_s1_adeudos_pasivos: BEGIN
+[0m07:57:32.106088 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m07:57:32.106413 [debug] [Thread-4 (]: On model.dataton_s1.stg_s1_declaraciones: BEGIN
+[0m07:57:32.107027 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:57:32.107558 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m07:57:32.107884 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m07:57:32.108214 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m07:57:32.108720 [debug] [Thread-3 (]: Using duckdb connection "model.dataton_s1.stg_s1_datos_pareja"
+[0m07:57:32.109200 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m07:57:32.109532 [debug] [Thread-2 (]: Using duckdb connection "model.dataton_s1.stg_s1_bienes_muebles"
+[0m07:57:32.109833 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m07:57:32.110180 [debug] [Thread-3 (]: On model.dataton_s1.stg_s1_datos_pareja: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_datos_pareja"} */
+
+  
+  create view "dataton_s1"."main"."stg_s1_datos_pareja__dbt_tmp" as (
+    
+
+select * 
+from read_csv_auto('/home/arkade/Documents/github/dataton-2025/system_1/csv_outputs/*/s1_datos_pareja.csv', union_by_name=True, filename=True, ignore_errors=True)
+  );
+
+[0m07:57:32.110496 [debug] [Thread-1 (]: Using duckdb connection "model.dataton_s1.stg_s1_adeudos_pasivos"
+[0m07:57:32.110816 [debug] [Thread-2 (]: On model.dataton_s1.stg_s1_bienes_muebles: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_bienes_muebles"} */
+
+  
+  create view "dataton_s1"."main"."stg_s1_bienes_muebles__dbt_tmp" as (
+    
+
+select * 
+from read_csv_auto('/home/arkade/Documents/github/dataton-2025/system_1/csv_outputs/*/s1_bienes_muebles.csv', union_by_name=True, filename=True, ignore_errors=True)
+  );
+
+[0m07:57:32.111152 [debug] [Thread-4 (]: Using duckdb connection "model.dataton_s1.stg_s1_declaraciones"
+[0m07:57:32.111741 [debug] [Thread-1 (]: On model.dataton_s1.stg_s1_adeudos_pasivos: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_adeudos_pasivos"} */
+
+  
+  create view "dataton_s1"."main"."stg_s1_adeudos_pasivos__dbt_tmp" as (
+    
+
+select * 
+from read_csv_auto('/home/arkade/Documents/github/dataton-2025/system_1/csv_outputs/*/s1_adeudos_pasivos.csv', union_by_name=True, filename=True, ignore_errors=True)
+  );
+
+[0m07:57:32.112304 [debug] [Thread-4 (]: On model.dataton_s1.stg_s1_declaraciones: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_declaraciones"} */
+
+  
+  create view "dataton_s1"."main"."stg_s1_declaraciones__dbt_tmp" as (
+    
+
+select * 
+from read_csv_auto('/home/arkade/Documents/github/dataton-2025/system_1/csv_outputs/*/s1_resumen.csv', union_by_name=True, filename=True, ignore_errors=True)
+  );
+
+[0m07:57:32.144997 [debug] [Thread-3 (]: SQL status: OK in 0.033 seconds
+[0m07:57:32.271637 [debug] [Thread-3 (]: Using duckdb connection "model.dataton_s1.stg_s1_datos_pareja"
+[0m07:57:32.273649 [debug] [Thread-3 (]: On model.dataton_s1.stg_s1_datos_pareja: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_datos_pareja"} */
+alter view "dataton_s1"."main"."stg_s1_datos_pareja__dbt_tmp" rename to "stg_s1_datos_pareja"
+[0m07:57:32.275470 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m07:57:32.274189 [debug] [Thread-1 (]: SQL status: OK in 0.161 seconds
+[0m07:57:32.286162 [debug] [Thread-1 (]: Using duckdb connection "model.dataton_s1.stg_s1_adeudos_pasivos"
+[0m07:57:32.291588 [debug] [Thread-3 (]: On model.dataton_s1.stg_s1_datos_pareja: COMMIT
+[0m07:57:32.292634 [debug] [Thread-3 (]: Using duckdb connection "model.dataton_s1.stg_s1_datos_pareja"
+[0m07:57:32.293061 [debug] [Thread-3 (]: On model.dataton_s1.stg_s1_datos_pareja: COMMIT
+[0m07:57:32.292168 [debug] [Thread-1 (]: On model.dataton_s1.stg_s1_adeudos_pasivos: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_adeudos_pasivos"} */
+alter view "dataton_s1"."main"."stg_s1_adeudos_pasivos__dbt_tmp" rename to "stg_s1_adeudos_pasivos"
+[0m07:57:32.294355 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m07:57:32.295951 [debug] [Thread-1 (]: On model.dataton_s1.stg_s1_adeudos_pasivos: COMMIT
+[0m07:57:32.296692 [debug] [Thread-1 (]: Using duckdb connection "model.dataton_s1.stg_s1_adeudos_pasivos"
+[0m07:57:32.297168 [debug] [Thread-1 (]: On model.dataton_s1.stg_s1_adeudos_pasivos: COMMIT
+[0m07:57:32.297620 [debug] [Thread-3 (]: SQL status: OK in 0.004 seconds
+[0m07:57:32.304414 [debug] [Thread-3 (]: Using duckdb connection "model.dataton_s1.stg_s1_datos_pareja"
+[0m07:57:32.305019 [debug] [Thread-1 (]: SQL status: OK in 0.007 seconds
+[0m07:57:32.305658 [debug] [Thread-3 (]: On model.dataton_s1.stg_s1_datos_pareja: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_datos_pareja"} */
+
+      drop view if exists "dataton_s1"."main"."stg_s1_datos_pareja__dbt_backup" cascade
+    
+[0m07:57:32.309480 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m07:57:32.308399 [debug] [Thread-1 (]: Using duckdb connection "model.dataton_s1.stg_s1_adeudos_pasivos"
+[0m07:57:32.312748 [debug] [Thread-3 (]: On model.dataton_s1.stg_s1_datos_pareja: Close
+[0m07:57:32.313371 [debug] [Thread-1 (]: On model.dataton_s1.stg_s1_adeudos_pasivos: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_adeudos_pasivos"} */
+
+      drop view if exists "dataton_s1"."main"."stg_s1_adeudos_pasivos__dbt_backup" cascade
+    
+[0m07:57:32.315787 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m07:57:32.317991 [debug] [Thread-1 (]: On model.dataton_s1.stg_s1_adeudos_pasivos: Close
+[0m07:57:32.318643 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8f6e4bba-426e-447b-a94f-b1a41709ea30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77f8314bc740>]}
+[0m07:57:32.316440 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8f6e4bba-426e-447b-a94f-b1a41709ea30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77f831489dc0>]}
+[0m07:57:32.319592 [info ] [Thread-3 (]: 3 of 17 OK created sql view model main.stg_s1_datos_pareja ..................... [[32mOK[0m in 0.26s]
+[0m07:57:32.320366 [debug] [Thread-3 (]: Finished running node model.dataton_s1.stg_s1_datos_pareja
+[0m07:57:32.321944 [debug] [Thread-3 (]: Began running node model.dataton_s1.stg_s1_dependientes_economicos
+[0m07:57:32.321480 [info ] [Thread-1 (]: 1 of 17 OK created sql view model main.stg_s1_adeudos_pasivos .................. [[32mOK[0m in 0.27s]
+[0m07:57:32.323693 [debug] [Thread-1 (]: Finished running node model.dataton_s1.stg_s1_adeudos_pasivos
+[0m07:57:32.324196 [debug] [Thread-1 (]: Began running node model.dataton_s1.stg_s1_experiencia_laboral
+[0m07:57:32.323008 [info ] [Thread-3 (]: 5 of 17 START sql view model main.stg_s1_dependientes_economicos ............... [RUN]
+[0m07:57:32.325474 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dataton_s1.stg_s1_datos_pareja, now model.dataton_s1.stg_s1_dependientes_economicos)
+[0m07:57:32.325941 [debug] [Thread-3 (]: Began compiling node model.dataton_s1.stg_s1_dependientes_economicos
+[0m07:57:32.328805 [debug] [Thread-3 (]: Writing injected SQL for node "model.dataton_s1.stg_s1_dependientes_economicos"
+[0m07:57:32.325047 [info ] [Thread-1 (]: 6 of 17 START sql view model main.stg_s1_experiencia_laboral ................... [RUN]
+[0m07:57:32.329847 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dataton_s1.stg_s1_adeudos_pasivos, now model.dataton_s1.stg_s1_experiencia_laboral)
+[0m07:57:32.330306 [debug] [Thread-1 (]: Began compiling node model.dataton_s1.stg_s1_experiencia_laboral
+[0m07:57:32.332905 [debug] [Thread-1 (]: Writing injected SQL for node "model.dataton_s1.stg_s1_experiencia_laboral"
+[0m07:57:32.334049 [debug] [Thread-1 (]: Began executing node model.dataton_s1.stg_s1_experiencia_laboral
+[0m07:57:32.338074 [debug] [Thread-1 (]: Writing runtime sql for node "model.dataton_s1.stg_s1_experiencia_laboral"
+[0m07:57:32.338657 [debug] [Thread-3 (]: Began executing node model.dataton_s1.stg_s1_dependientes_economicos
+[0m07:57:32.344988 [debug] [Thread-3 (]: Writing runtime sql for node "model.dataton_s1.stg_s1_dependientes_economicos"
+[0m07:57:32.347396 [debug] [Thread-3 (]: Using duckdb connection "model.dataton_s1.stg_s1_dependientes_economicos"
+[0m07:57:32.348018 [debug] [Thread-1 (]: Using duckdb connection "model.dataton_s1.stg_s1_experiencia_laboral"
+[0m07:57:32.353026 [debug] [Thread-1 (]: On model.dataton_s1.stg_s1_experiencia_laboral: BEGIN
+[0m07:57:32.353559 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:57:32.354810 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m07:57:32.355324 [debug] [Thread-1 (]: Using duckdb connection "model.dataton_s1.stg_s1_experiencia_laboral"
+[0m07:57:32.348563 [debug] [Thread-3 (]: On model.dataton_s1.stg_s1_dependientes_economicos: BEGIN
+[0m07:57:32.356709 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m07:57:32.357418 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m07:57:32.357850 [debug] [Thread-3 (]: Using duckdb connection "model.dataton_s1.stg_s1_dependientes_economicos"
+[0m07:57:32.358291 [debug] [Thread-3 (]: On model.dataton_s1.stg_s1_dependientes_economicos: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_dependientes_economicos"} */
+
+  
+  create view "dataton_s1"."main"."stg_s1_dependientes_economicos__dbt_tmp" as (
+    
+
+select * 
+from read_csv_auto('/home/arkade/Documents/github/dataton-2025/system_1/csv_outputs/*/s1_dependientes_economicos.csv', union_by_name=True, filename=True, ignore_errors=True)
+  );
+
+[0m07:57:32.355843 [debug] [Thread-1 (]: On model.dataton_s1.stg_s1_experiencia_laboral: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_experiencia_laboral"} */
+
+  
+  create view "dataton_s1"."main"."stg_s1_experiencia_laboral__dbt_tmp" as (
+    
+
+select * 
+from read_csv_auto('/home/arkade/Documents/github/dataton-2025/system_1/csv_outputs/*/s1_experiencia_laboral.csv', union_by_name=True, filename=True, ignore_errors=True)
+  );
+
+[0m07:57:32.403840 [debug] [Thread-3 (]: SQL status: OK in 0.045 seconds
+[0m07:57:32.410357 [debug] [Thread-3 (]: Using duckdb connection "model.dataton_s1.stg_s1_dependientes_economicos"
+[0m07:57:32.410994 [debug] [Thread-3 (]: On model.dataton_s1.stg_s1_dependientes_economicos: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_dependientes_economicos"} */
+alter view "dataton_s1"."main"."stg_s1_dependientes_economicos__dbt_tmp" rename to "stg_s1_dependientes_economicos"
+[0m07:57:32.412095 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m07:57:32.414185 [debug] [Thread-3 (]: On model.dataton_s1.stg_s1_dependientes_economicos: COMMIT
+[0m07:57:32.414795 [debug] [Thread-3 (]: Using duckdb connection "model.dataton_s1.stg_s1_dependientes_economicos"
+[0m07:57:32.415404 [debug] [Thread-3 (]: On model.dataton_s1.stg_s1_dependientes_economicos: COMMIT
+[0m07:57:32.417215 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m07:57:32.419783 [debug] [Thread-3 (]: Using duckdb connection "model.dataton_s1.stg_s1_dependientes_economicos"
+[0m07:57:32.420325 [debug] [Thread-3 (]: On model.dataton_s1.stg_s1_dependientes_economicos: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_dependientes_economicos"} */
+
+      drop view if exists "dataton_s1"."main"."stg_s1_dependientes_economicos__dbt_backup" cascade
+    
+[0m07:57:32.422972 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m07:57:32.424385 [debug] [Thread-3 (]: On model.dataton_s1.stg_s1_dependientes_economicos: Close
+[0m07:57:32.425574 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8f6e4bba-426e-447b-a94f-b1a41709ea30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77f85155a450>]}
+[0m07:57:32.426409 [info ] [Thread-3 (]: 5 of 17 OK created sql view model main.stg_s1_dependientes_economicos .......... [[32mOK[0m in 0.10s]
+[0m07:57:32.427050 [debug] [Thread-3 (]: Finished running node model.dataton_s1.stg_s1_dependientes_economicos
+[0m07:57:32.427537 [debug] [Thread-3 (]: Began running node model.dataton_s1.stg_s1_ingresos
+[0m07:57:32.429079 [info ] [Thread-3 (]: 7 of 17 START sql view model main.stg_s1_ingresos .............................. [RUN]
+[0m07:57:32.429699 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dataton_s1.stg_s1_dependientes_economicos, now model.dataton_s1.stg_s1_ingresos)
+[0m07:57:32.430223 [debug] [Thread-3 (]: Began compiling node model.dataton_s1.stg_s1_ingresos
+[0m07:57:32.441311 [debug] [Thread-3 (]: Writing injected SQL for node "model.dataton_s1.stg_s1_ingresos"
+[0m07:57:32.442141 [debug] [Thread-3 (]: Began executing node model.dataton_s1.stg_s1_ingresos
+[0m07:57:32.442777 [debug] [Thread-2 (]: SQL status: OK in 0.331 seconds
+[0m07:57:32.450459 [debug] [Thread-2 (]: Using duckdb connection "model.dataton_s1.stg_s1_bienes_muebles"
+[0m07:57:32.447076 [debug] [Thread-3 (]: Writing runtime sql for node "model.dataton_s1.stg_s1_ingresos"
+[0m07:57:32.451851 [debug] [Thread-3 (]: Using duckdb connection "model.dataton_s1.stg_s1_ingresos"
+[0m07:57:32.452343 [debug] [Thread-3 (]: On model.dataton_s1.stg_s1_ingresos: BEGIN
+[0m07:57:32.452813 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m07:57:32.453669 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m07:57:32.454077 [debug] [Thread-3 (]: Using duckdb connection "model.dataton_s1.stg_s1_ingresos"
+[0m07:57:32.454493 [debug] [Thread-3 (]: On model.dataton_s1.stg_s1_ingresos: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_ingresos"} */
+
+  
+  create view "dataton_s1"."main"."stg_s1_ingresos__dbt_tmp" as (
+    
+
+select * 
+from read_csv_auto('/home/arkade/Documents/github/dataton-2025/system_1/csv_outputs/*/s1_ingresos.csv', union_by_name=True, filename=True)
+  );
+
+[0m07:57:32.450995 [debug] [Thread-2 (]: On model.dataton_s1.stg_s1_bienes_muebles: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_bienes_muebles"} */
+alter view "dataton_s1"."main"."stg_s1_bienes_muebles__dbt_tmp" rename to "stg_s1_bienes_muebles"
+[0m07:57:32.455567 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m07:57:32.457214 [debug] [Thread-2 (]: On model.dataton_s1.stg_s1_bienes_muebles: COMMIT
+[0m07:57:32.457650 [debug] [Thread-2 (]: Using duckdb connection "model.dataton_s1.stg_s1_bienes_muebles"
+[0m07:57:32.461126 [debug] [Thread-2 (]: On model.dataton_s1.stg_s1_bienes_muebles: COMMIT
+[0m07:57:32.462798 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m07:57:32.465433 [debug] [Thread-2 (]: Using duckdb connection "model.dataton_s1.stg_s1_bienes_muebles"
+[0m07:57:32.465917 [debug] [Thread-2 (]: On model.dataton_s1.stg_s1_bienes_muebles: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_bienes_muebles"} */
+
+      drop view if exists "dataton_s1"."main"."stg_s1_bienes_muebles__dbt_backup" cascade
+    
+[0m07:57:32.469751 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m07:57:32.471279 [debug] [Thread-2 (]: On model.dataton_s1.stg_s1_bienes_muebles: Close
+[0m07:57:32.475728 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8f6e4bba-426e-447b-a94f-b1a41709ea30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77f8315cddc0>]}
+[0m07:57:32.476509 [info ] [Thread-2 (]: 2 of 17 OK created sql view model main.stg_s1_bienes_muebles ................... [[32mOK[0m in 0.42s]
+[0m07:57:32.477187 [debug] [Thread-2 (]: Finished running node model.dataton_s1.stg_s1_bienes_muebles
+[0m07:57:32.477761 [debug] [Thread-2 (]: Began running node model.dataton_s1.stg_s1_inmuebles
+[0m07:57:32.478389 [info ] [Thread-2 (]: 8 of 17 START sql view model main.stg_s1_inmuebles ............................. [RUN]
+[0m07:57:32.478904 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dataton_s1.stg_s1_bienes_muebles, now model.dataton_s1.stg_s1_inmuebles)
+[0m07:57:32.479340 [debug] [Thread-2 (]: Began compiling node model.dataton_s1.stg_s1_inmuebles
+[0m07:57:32.489401 [debug] [Thread-2 (]: Writing injected SQL for node "model.dataton_s1.stg_s1_inmuebles"
+[0m07:57:32.490230 [debug] [Thread-2 (]: Began executing node model.dataton_s1.stg_s1_inmuebles
+[0m07:57:32.494253 [debug] [Thread-2 (]: Writing runtime sql for node "model.dataton_s1.stg_s1_inmuebles"
+[0m07:57:32.494953 [debug] [Thread-2 (]: Using duckdb connection "model.dataton_s1.stg_s1_inmuebles"
+[0m07:57:32.495425 [debug] [Thread-2 (]: On model.dataton_s1.stg_s1_inmuebles: BEGIN
+[0m07:57:32.495922 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m07:57:32.496776 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m07:57:32.497289 [debug] [Thread-2 (]: Using duckdb connection "model.dataton_s1.stg_s1_inmuebles"
+[0m07:57:32.497782 [debug] [Thread-2 (]: On model.dataton_s1.stg_s1_inmuebles: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_inmuebles"} */
+
+  
+  create view "dataton_s1"."main"."stg_s1_inmuebles__dbt_tmp" as (
+    
+
+select * 
+from read_csv_auto('/home/arkade/Documents/github/dataton-2025/system_1/csv_outputs/*/s1_bienes_inmuebles.csv', union_by_name=True)
+  );
+
+[0m07:57:32.656814 [debug] [Thread-4 (]: SQL status: OK in 0.544 seconds
+[0m07:57:32.660341 [debug] [Thread-4 (]: Using duckdb connection "model.dataton_s1.stg_s1_declaraciones"
+[0m07:57:32.660701 [debug] [Thread-4 (]: On model.dataton_s1.stg_s1_declaraciones: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_declaraciones"} */
+alter view "dataton_s1"."main"."stg_s1_declaraciones" rename to "stg_s1_declaraciones__dbt_backup"
+[0m07:57:32.661417 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m07:57:32.663533 [debug] [Thread-4 (]: Using duckdb connection "model.dataton_s1.stg_s1_declaraciones"
+[0m07:57:32.663877 [debug] [Thread-4 (]: On model.dataton_s1.stg_s1_declaraciones: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_declaraciones"} */
+alter view "dataton_s1"."main"."stg_s1_declaraciones__dbt_tmp" rename to "stg_s1_declaraciones"
+[0m07:57:32.664501 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m07:57:32.667612 [debug] [Thread-4 (]: On model.dataton_s1.stg_s1_declaraciones: COMMIT
+[0m07:57:32.667969 [debug] [Thread-4 (]: Using duckdb connection "model.dataton_s1.stg_s1_declaraciones"
+[0m07:57:32.668337 [debug] [Thread-4 (]: On model.dataton_s1.stg_s1_declaraciones: COMMIT
+[0m07:57:32.673448 [debug] [Thread-4 (]: SQL status: OK in 0.005 seconds
+[0m07:57:32.674176 [debug] [Thread-3 (]: SQL status: OK in 0.219 seconds
+[0m07:57:32.676540 [debug] [Thread-4 (]: Using duckdb connection "model.dataton_s1.stg_s1_declaraciones"
+[0m07:57:32.679390 [debug] [Thread-3 (]: Using duckdb connection "model.dataton_s1.stg_s1_ingresos"
+[0m07:57:32.679845 [debug] [Thread-4 (]: On model.dataton_s1.stg_s1_declaraciones: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_declaraciones"} */
+
+      drop view if exists "dataton_s1"."main"."stg_s1_declaraciones__dbt_backup" cascade
+    
+[0m07:57:32.680271 [debug] [Thread-3 (]: On model.dataton_s1.stg_s1_ingresos: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_ingresos"} */
+alter view "dataton_s1"."main"."stg_s1_ingresos" rename to "stg_s1_ingresos__dbt_backup"
+[0m07:57:32.680632 [debug] [Thread-2 (]: SQL status: OK in 0.182 seconds
+[0m07:57:32.685118 [debug] [Thread-2 (]: Using duckdb connection "model.dataton_s1.stg_s1_inmuebles"
+[0m07:57:32.685566 [debug] [Thread-2 (]: On model.dataton_s1.stg_s1_inmuebles: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_inmuebles"} */
+alter view "dataton_s1"."main"."stg_s1_inmuebles" rename to "stg_s1_inmuebles__dbt_backup"
+[0m07:57:32.685893 [debug] [Thread-3 (]: SQL status: OK in 0.005 seconds
+[0m07:57:32.686237 [debug] [Thread-4 (]: SQL status: OK in 0.005 seconds
+[0m07:57:32.688423 [debug] [Thread-3 (]: Using duckdb connection "model.dataton_s1.stg_s1_ingresos"
+[0m07:57:32.689676 [debug] [Thread-4 (]: On model.dataton_s1.stg_s1_declaraciones: Close
+[0m07:57:32.690055 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m07:57:32.690387 [debug] [Thread-3 (]: On model.dataton_s1.stg_s1_ingresos: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_ingresos"} */
+alter view "dataton_s1"."main"."stg_s1_ingresos__dbt_tmp" rename to "stg_s1_ingresos"
+[0m07:57:32.690921 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8f6e4bba-426e-447b-a94f-b1a41709ea30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77f831454c50>]}
+[0m07:57:32.692869 [debug] [Thread-2 (]: Using duckdb connection "model.dataton_s1.stg_s1_inmuebles"
+[0m07:57:32.693547 [info ] [Thread-4 (]: 4 of 17 OK created sql view model main.stg_s1_declaraciones .................... [[32mOK[0m in 0.64s]
+[0m07:57:32.693941 [debug] [Thread-1 (]: SQL status: OK in 0.334 seconds
+[0m07:57:32.694265 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m07:57:32.694572 [debug] [Thread-2 (]: On model.dataton_s1.stg_s1_inmuebles: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_inmuebles"} */
+alter view "dataton_s1"."main"."stg_s1_inmuebles__dbt_tmp" rename to "stg_s1_inmuebles"
+[0m07:57:32.695036 [debug] [Thread-4 (]: Finished running node model.dataton_s1.stg_s1_declaraciones
+[0m07:57:32.696904 [debug] [Thread-1 (]: Using duckdb connection "model.dataton_s1.stg_s1_experiencia_laboral"
+[0m07:57:32.698101 [debug] [Thread-3 (]: On model.dataton_s1.stg_s1_ingresos: COMMIT
+[0m07:57:32.698570 [debug] [Thread-4 (]: Began running node model.dataton_s1.stg_s1_interes_apoyos
+[0m07:57:32.698969 [debug] [Thread-1 (]: On model.dataton_s1.stg_s1_experiencia_laboral: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_experiencia_laboral"} */
+alter view "dataton_s1"."main"."stg_s1_experiencia_laboral__dbt_tmp" rename to "stg_s1_experiencia_laboral"
+[0m07:57:32.699660 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m07:57:32.700238 [debug] [Thread-3 (]: Using duckdb connection "model.dataton_s1.stg_s1_ingresos"
+[0m07:57:32.700777 [info ] [Thread-4 (]: 9 of 17 START sql view model main.stg_s1_interes_apoyos ........................ [RUN]
+[0m07:57:32.702189 [debug] [Thread-2 (]: On model.dataton_s1.stg_s1_inmuebles: COMMIT
+[0m07:57:32.702532 [debug] [Thread-3 (]: On model.dataton_s1.stg_s1_ingresos: COMMIT
+[0m07:57:32.702877 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m07:57:32.703229 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dataton_s1.stg_s1_declaraciones, now model.dataton_s1.stg_s1_interes_apoyos)
+[0m07:57:32.703571 [debug] [Thread-2 (]: Using duckdb connection "model.dataton_s1.stg_s1_inmuebles"
+[0m07:57:32.704713 [debug] [Thread-1 (]: On model.dataton_s1.stg_s1_experiencia_laboral: COMMIT
+[0m07:57:32.705054 [debug] [Thread-4 (]: Began compiling node model.dataton_s1.stg_s1_interes_apoyos
+[0m07:57:32.705418 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m07:57:32.705769 [debug] [Thread-2 (]: On model.dataton_s1.stg_s1_inmuebles: COMMIT
+[0m07:57:32.706099 [debug] [Thread-1 (]: Using duckdb connection "model.dataton_s1.stg_s1_experiencia_laboral"
+[0m07:57:32.708038 [debug] [Thread-4 (]: Writing injected SQL for node "model.dataton_s1.stg_s1_interes_apoyos"
+[0m07:57:32.709642 [debug] [Thread-3 (]: Using duckdb connection "model.dataton_s1.stg_s1_ingresos"
+[0m07:57:32.710038 [debug] [Thread-1 (]: On model.dataton_s1.stg_s1_experiencia_laboral: COMMIT
+[0m07:57:32.710458 [debug] [Thread-3 (]: On model.dataton_s1.stg_s1_ingresos: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_ingresos"} */
+
+      drop view if exists "dataton_s1"."main"."stg_s1_ingresos__dbt_backup" cascade
+    
+[0m07:57:32.710905 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m07:57:32.712607 [debug] [Thread-2 (]: Using duckdb connection "model.dataton_s1.stg_s1_inmuebles"
+[0m07:57:32.712949 [debug] [Thread-2 (]: On model.dataton_s1.stg_s1_inmuebles: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_inmuebles"} */
+
+      drop view if exists "dataton_s1"."main"."stg_s1_inmuebles__dbt_backup" cascade
+    
+[0m07:57:32.713270 [debug] [Thread-4 (]: Began executing node model.dataton_s1.stg_s1_interes_apoyos
+[0m07:57:32.713566 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m07:57:32.713881 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m07:57:32.716609 [debug] [Thread-4 (]: Writing runtime sql for node "model.dataton_s1.stg_s1_interes_apoyos"
+[0m07:57:32.717586 [debug] [Thread-3 (]: On model.dataton_s1.stg_s1_ingresos: Close
+[0m07:57:32.717922 [debug] [Thread-2 (]: SQL status: OK in 0.004 seconds
+[0m07:57:32.719503 [debug] [Thread-1 (]: Using duckdb connection "model.dataton_s1.stg_s1_experiencia_laboral"
+[0m07:57:32.720038 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8f6e4bba-426e-447b-a94f-b1a41709ea30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77f831586f30>]}
+[0m07:57:32.720992 [debug] [Thread-2 (]: On model.dataton_s1.stg_s1_inmuebles: Close
+[0m07:57:32.721375 [debug] [Thread-4 (]: Using duckdb connection "model.dataton_s1.stg_s1_interes_apoyos"
+[0m07:57:32.721676 [debug] [Thread-1 (]: On model.dataton_s1.stg_s1_experiencia_laboral: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_experiencia_laboral"} */
+
+      drop view if exists "dataton_s1"."main"."stg_s1_experiencia_laboral__dbt_backup" cascade
+    
+[0m07:57:32.722206 [info ] [Thread-3 (]: 7 of 17 OK created sql view model main.stg_s1_ingresos ......................... [[32mOK[0m in 0.29s]
+[0m07:57:32.722674 [debug] [Thread-4 (]: On model.dataton_s1.stg_s1_interes_apoyos: BEGIN
+[0m07:57:32.723157 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8f6e4bba-426e-447b-a94f-b1a41709ea30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77f85b146d80>]}
+[0m07:57:32.723865 [debug] [Thread-3 (]: Finished running node model.dataton_s1.stg_s1_ingresos
+[0m07:57:32.724305 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m07:57:32.724627 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m07:57:32.725119 [info ] [Thread-2 (]: 8 of 17 OK created sql view model main.stg_s1_inmuebles ........................ [[32mOK[0m in 0.24s]
+[0m07:57:32.725533 [debug] [Thread-3 (]: Began running node model.dataton_s1.stg_s1_interes_participacion
+[0m07:57:32.726770 [debug] [Thread-1 (]: On model.dataton_s1.stg_s1_experiencia_laboral: Close
+[0m07:57:32.727084 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m07:57:32.727522 [debug] [Thread-2 (]: Finished running node model.dataton_s1.stg_s1_inmuebles
+[0m07:57:32.727963 [info ] [Thread-3 (]: 10 of 17 START sql view model main.stg_s1_interes_participacion ................ [RUN]
+[0m07:57:32.728566 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8f6e4bba-426e-447b-a94f-b1a41709ea30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77f83158b860>]}
+[0m07:57:32.728896 [debug] [Thread-4 (]: Using duckdb connection "model.dataton_s1.stg_s1_interes_apoyos"
+[0m07:57:32.729264 [debug] [Thread-2 (]: Began running node model.dataton_s1.stg_s1_inversiones
+[0m07:57:32.729639 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dataton_s1.stg_s1_ingresos, now model.dataton_s1.stg_s1_interes_participacion)
+[0m07:57:32.730126 [info ] [Thread-1 (]: 6 of 17 OK created sql view model main.stg_s1_experiencia_laboral .............. [[32mOK[0m in 0.40s]
+[0m07:57:32.730536 [debug] [Thread-4 (]: On model.dataton_s1.stg_s1_interes_apoyos: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_interes_apoyos"} */
+
+  
+  create view "dataton_s1"."main"."stg_s1_interes_apoyos__dbt_tmp" as (
+    
+
+select * 
+from read_csv_auto('/home/arkade/Documents/github/dataton-2025/system_1/csv_outputs/*/interes_apoyos.csv', union_by_name=True)
+  );
+
+[0m07:57:32.730937 [info ] [Thread-2 (]: 11 of 17 START sql view model main.stg_s1_inversiones .......................... [RUN]
+[0m07:57:32.731337 [debug] [Thread-3 (]: Began compiling node model.dataton_s1.stg_s1_interes_participacion
+[0m07:57:32.731767 [debug] [Thread-1 (]: Finished running node model.dataton_s1.stg_s1_experiencia_laboral
+[0m07:57:32.739289 [debug] [Thread-1 (]: Began running node model.dataton_s1.stg_s1_prestamo_comodato
+[0m07:57:32.737510 [debug] [Thread-3 (]: Writing injected SQL for node "model.dataton_s1.stg_s1_interes_participacion"
+[0m07:57:32.732225 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dataton_s1.stg_s1_inmuebles, now model.dataton_s1.stg_s1_inversiones)
+[0m07:57:32.740927 [debug] [Thread-2 (]: Began compiling node model.dataton_s1.stg_s1_inversiones
+[0m07:57:32.740045 [info ] [Thread-1 (]: 12 of 17 START sql view model main.stg_s1_prestamo_comodato .................... [RUN]
+[0m07:57:32.743674 [debug] [Thread-2 (]: Writing injected SQL for node "model.dataton_s1.stg_s1_inversiones"
+[0m07:57:32.744215 [debug] [Thread-3 (]: Began executing node model.dataton_s1.stg_s1_interes_participacion
+[0m07:57:32.744811 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dataton_s1.stg_s1_experiencia_laboral, now model.dataton_s1.stg_s1_prestamo_comodato)
+[0m07:57:32.751247 [debug] [Thread-2 (]: Began executing node model.dataton_s1.stg_s1_inversiones
+[0m07:57:32.750952 [debug] [Thread-3 (]: Writing runtime sql for node "model.dataton_s1.stg_s1_interes_participacion"
+[0m07:57:32.751974 [debug] [Thread-1 (]: Began compiling node model.dataton_s1.stg_s1_prestamo_comodato
+[0m07:57:32.755572 [debug] [Thread-2 (]: Writing runtime sql for node "model.dataton_s1.stg_s1_inversiones"
+[0m07:57:32.757669 [debug] [Thread-1 (]: Writing injected SQL for node "model.dataton_s1.stg_s1_prestamo_comodato"
+[0m07:57:32.758271 [debug] [Thread-3 (]: Using duckdb connection "model.dataton_s1.stg_s1_interes_participacion"
+[0m07:57:32.758770 [debug] [Thread-2 (]: Using duckdb connection "model.dataton_s1.stg_s1_inversiones"
+[0m07:57:32.759120 [debug] [Thread-3 (]: On model.dataton_s1.stg_s1_interes_participacion: BEGIN
+[0m07:57:32.759572 [debug] [Thread-1 (]: Began executing node model.dataton_s1.stg_s1_prestamo_comodato
+[0m07:57:32.760019 [debug] [Thread-2 (]: On model.dataton_s1.stg_s1_inversiones: BEGIN
+[0m07:57:32.760360 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m07:57:32.762853 [debug] [Thread-1 (]: Writing runtime sql for node "model.dataton_s1.stg_s1_prestamo_comodato"
+[0m07:57:32.763227 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m07:57:32.763585 [debug] [Thread-4 (]: SQL status: OK in 0.031 seconds
+[0m07:57:32.764256 [debug] [Thread-3 (]: SQL status: OK in 0.004 seconds
+[0m07:57:32.767388 [debug] [Thread-4 (]: Using duckdb connection "model.dataton_s1.stg_s1_interes_apoyos"
+[0m07:57:32.767745 [debug] [Thread-1 (]: Using duckdb connection "model.dataton_s1.stg_s1_prestamo_comodato"
+[0m07:57:32.768113 [debug] [Thread-3 (]: Using duckdb connection "model.dataton_s1.stg_s1_interes_participacion"
+[0m07:57:32.768441 [debug] [Thread-2 (]: SQL status: OK in 0.005 seconds
+[0m07:57:32.768778 [debug] [Thread-4 (]: On model.dataton_s1.stg_s1_interes_apoyos: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_interes_apoyos"} */
+alter view "dataton_s1"."main"."stg_s1_interes_apoyos" rename to "stg_s1_interes_apoyos__dbt_backup"
+[0m07:57:32.769113 [debug] [Thread-1 (]: On model.dataton_s1.stg_s1_prestamo_comodato: BEGIN
+[0m07:57:32.769485 [debug] [Thread-3 (]: On model.dataton_s1.stg_s1_interes_participacion: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_interes_participacion"} */
+
+  
+  create view "dataton_s1"."main"."stg_s1_interes_participacion__dbt_tmp" as (
+    
+
+select * 
+from read_csv_auto('/home/arkade/Documents/github/dataton-2025/system_1/csv_outputs/*/interes_participacion.csv', union_by_name=True)
+  );
+
+[0m07:57:32.769855 [debug] [Thread-2 (]: Using duckdb connection "model.dataton_s1.stg_s1_inversiones"
+[0m07:57:32.770307 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:57:32.770732 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m07:57:32.771149 [debug] [Thread-2 (]: On model.dataton_s1.stg_s1_inversiones: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_inversiones"} */
+
+  
+  create view "dataton_s1"."main"."stg_s1_inversiones__dbt_tmp" as (
+    
+
+select * 
+from read_csv_auto('/home/arkade/Documents/github/dataton-2025/system_1/csv_outputs/*/s1_inversiones.csv', union_by_name=True, filename=True, ignore_errors=True)
+  );
+
+[0m07:57:32.776761 [debug] [Thread-4 (]: Using duckdb connection "model.dataton_s1.stg_s1_interes_apoyos"
+[0m07:57:32.777248 [debug] [Thread-1 (]: SQL status: OK in 0.007 seconds
+[0m07:57:32.778693 [debug] [Thread-1 (]: Using duckdb connection "model.dataton_s1.stg_s1_prestamo_comodato"
+[0m07:57:32.779160 [debug] [Thread-1 (]: On model.dataton_s1.stg_s1_prestamo_comodato: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_prestamo_comodato"} */
+
+  
+  create view "dataton_s1"."main"."stg_s1_prestamo_comodato__dbt_tmp" as (
+    
+
+select * 
+from read_csv_auto('/home/arkade/Documents/github/dataton-2025/system_1/csv_outputs/*/s1_prestamo_comodato.csv', union_by_name=True, filename=True, ignore_errors=True)
+  );
+
+[0m07:57:32.777796 [debug] [Thread-4 (]: On model.dataton_s1.stg_s1_interes_apoyos: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_interes_apoyos"} */
+alter view "dataton_s1"."main"."stg_s1_interes_apoyos__dbt_tmp" rename to "stg_s1_interes_apoyos"
+[0m07:57:32.783157 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m07:57:32.785044 [debug] [Thread-4 (]: On model.dataton_s1.stg_s1_interes_apoyos: COMMIT
+[0m07:57:32.785551 [debug] [Thread-4 (]: Using duckdb connection "model.dataton_s1.stg_s1_interes_apoyos"
+[0m07:57:32.786021 [debug] [Thread-4 (]: On model.dataton_s1.stg_s1_interes_apoyos: COMMIT
+[0m07:57:32.792531 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m07:57:32.795301 [debug] [Thread-4 (]: Using duckdb connection "model.dataton_s1.stg_s1_interes_apoyos"
+[0m07:57:32.795748 [debug] [Thread-4 (]: On model.dataton_s1.stg_s1_interes_apoyos: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_interes_apoyos"} */
+
+      drop view if exists "dataton_s1"."main"."stg_s1_interes_apoyos__dbt_backup" cascade
+    
+[0m07:57:32.799272 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m07:57:32.800839 [debug] [Thread-4 (]: On model.dataton_s1.stg_s1_interes_apoyos: Close
+[0m07:57:32.801496 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8f6e4bba-426e-447b-a94f-b1a41709ea30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77f831584740>]}
+[0m07:57:32.802206 [info ] [Thread-4 (]: 9 of 17 OK created sql view model main.stg_s1_interes_apoyos ................... [[32mOK[0m in 0.10s]
+[0m07:57:32.805765 [debug] [Thread-4 (]: Finished running node model.dataton_s1.stg_s1_interes_apoyos
+[0m07:57:32.806270 [debug] [Thread-4 (]: Began running node model.dataton_s1.stg_s1_vehiculos
+[0m07:57:32.810445 [info ] [Thread-4 (]: 13 of 17 START sql view model main.stg_s1_vehiculos ............................ [RUN]
+[0m07:57:32.811012 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dataton_s1.stg_s1_interes_apoyos, now model.dataton_s1.stg_s1_vehiculos)
+[0m07:57:32.811488 [debug] [Thread-3 (]: SQL status: OK in 0.041 seconds
+[0m07:57:32.811973 [debug] [Thread-4 (]: Began compiling node model.dataton_s1.stg_s1_vehiculos
+[0m07:57:32.818370 [debug] [Thread-4 (]: Writing injected SQL for node "model.dataton_s1.stg_s1_vehiculos"
+[0m07:57:32.815504 [debug] [Thread-3 (]: Using duckdb connection "model.dataton_s1.stg_s1_interes_participacion"
+[0m07:57:32.822729 [debug] [Thread-3 (]: On model.dataton_s1.stg_s1_interes_participacion: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_interes_participacion"} */
+alter view "dataton_s1"."main"."stg_s1_interes_participacion" rename to "stg_s1_interes_participacion__dbt_backup"
+[0m07:57:32.823649 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m07:57:32.822207 [debug] [Thread-4 (]: Began executing node model.dataton_s1.stg_s1_vehiculos
+[0m07:57:32.830305 [debug] [Thread-3 (]: Using duckdb connection "model.dataton_s1.stg_s1_interes_participacion"
+[0m07:57:32.836262 [debug] [Thread-3 (]: On model.dataton_s1.stg_s1_interes_participacion: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_interes_participacion"} */
+alter view "dataton_s1"."main"."stg_s1_interes_participacion__dbt_tmp" rename to "stg_s1_interes_participacion"
+[0m07:57:32.837170 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m07:57:32.839063 [debug] [Thread-3 (]: On model.dataton_s1.stg_s1_interes_participacion: COMMIT
+[0m07:57:32.840129 [debug] [Thread-4 (]: Writing runtime sql for node "model.dataton_s1.stg_s1_vehiculos"
+[0m07:57:32.840632 [debug] [Thread-3 (]: Using duckdb connection "model.dataton_s1.stg_s1_interes_participacion"
+[0m07:57:32.841543 [debug] [Thread-3 (]: On model.dataton_s1.stg_s1_interes_participacion: COMMIT
+[0m07:57:32.841120 [debug] [Thread-1 (]: SQL status: OK in 0.061 seconds
+[0m07:57:32.843887 [debug] [Thread-1 (]: Using duckdb connection "model.dataton_s1.stg_s1_prestamo_comodato"
+[0m07:57:32.844973 [debug] [Thread-1 (]: On model.dataton_s1.stg_s1_prestamo_comodato: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_prestamo_comodato"} */
+alter view "dataton_s1"."main"."stg_s1_prestamo_comodato__dbt_tmp" rename to "stg_s1_prestamo_comodato"
+[0m07:57:32.844370 [debug] [Thread-4 (]: Using duckdb connection "model.dataton_s1.stg_s1_vehiculos"
+[0m07:57:32.845567 [debug] [Thread-3 (]: SQL status: OK in 0.004 seconds
+[0m07:57:32.845960 [debug] [Thread-4 (]: On model.dataton_s1.stg_s1_vehiculos: BEGIN
+[0m07:57:32.846446 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m07:57:32.848248 [debug] [Thread-3 (]: Using duckdb connection "model.dataton_s1.stg_s1_interes_participacion"
+[0m07:57:32.848628 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m07:57:32.850316 [debug] [Thread-1 (]: On model.dataton_s1.stg_s1_prestamo_comodato: COMMIT
+[0m07:57:32.850786 [debug] [Thread-3 (]: On model.dataton_s1.stg_s1_interes_participacion: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_interes_participacion"} */
+
+      drop view if exists "dataton_s1"."main"."stg_s1_interes_participacion__dbt_backup" cascade
+    
+[0m07:57:32.851380 [debug] [Thread-1 (]: Using duckdb connection "model.dataton_s1.stg_s1_prestamo_comodato"
+[0m07:57:32.851824 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m07:57:32.852181 [debug] [Thread-1 (]: On model.dataton_s1.stg_s1_prestamo_comodato: COMMIT
+[0m07:57:32.852511 [debug] [Thread-4 (]: Using duckdb connection "model.dataton_s1.stg_s1_vehiculos"
+[0m07:57:32.852924 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m07:57:32.853345 [debug] [Thread-4 (]: On model.dataton_s1.stg_s1_vehiculos: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_vehiculos"} */
+
+  
+  create view "dataton_s1"."main"."stg_s1_vehiculos__dbt_tmp" as (
+    
+
+select * 
+from read_csv_auto('/home/arkade/Documents/github/dataton-2025/system_1/csv_outputs/*/s1_vehiculos.csv', union_by_name=True)
+  );
+
+[0m07:57:32.853707 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m07:57:32.854875 [debug] [Thread-3 (]: On model.dataton_s1.stg_s1_interes_participacion: Close
+[0m07:57:32.859979 [debug] [Thread-1 (]: Using duckdb connection "model.dataton_s1.stg_s1_prestamo_comodato"
+[0m07:57:32.861203 [debug] [Thread-1 (]: On model.dataton_s1.stg_s1_prestamo_comodato: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_prestamo_comodato"} */
+
+      drop view if exists "dataton_s1"."main"."stg_s1_prestamo_comodato__dbt_backup" cascade
+    
+[0m07:57:32.862413 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m07:57:32.860637 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8f6e4bba-426e-447b-a94f-b1a41709ea30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77f831428980>]}
+[0m07:57:32.867540 [info ] [Thread-3 (]: 10 of 17 OK created sql view model main.stg_s1_interes_participacion ........... [[32mOK[0m in 0.13s]
+[0m07:57:32.868159 [debug] [Thread-3 (]: Finished running node model.dataton_s1.stg_s1_interes_participacion
+[0m07:57:32.863985 [debug] [Thread-1 (]: On model.dataton_s1.stg_s1_prestamo_comodato: Close
+[0m07:57:32.868630 [debug] [Thread-3 (]: Began running node model.dataton_s1.int_s1_declaraciones_normalizadas
+[0m07:57:32.869289 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8f6e4bba-426e-447b-a94f-b1a41709ea30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77f831672f00>]}
+[0m07:57:32.869757 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dataton_s1.stg_s1_interes_participacion, now model.dataton_s1.int_s1_declaraciones_normalizadas)
+[0m07:57:32.871289 [debug] [Thread-3 (]: Began compiling node model.dataton_s1.int_s1_declaraciones_normalizadas
+[0m07:57:32.870526 [info ] [Thread-1 (]: 12 of 17 OK created sql view model main.stg_s1_prestamo_comodato ............... [[32mOK[0m in 0.12s]
+[0m07:57:32.875774 [debug] [Thread-1 (]: Finished running node model.dataton_s1.stg_s1_prestamo_comodato
+[0m07:57:32.876243 [debug] [Thread-1 (]: Began running node model.dataton_s1.int_s1_ingresos_clasificados
+[0m07:57:32.876765 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dataton_s1.stg_s1_prestamo_comodato, now model.dataton_s1.int_s1_ingresos_clasificados)
+[0m07:57:32.877210 [debug] [Thread-1 (]: Began compiling node model.dataton_s1.int_s1_ingresos_clasificados
+[0m07:57:32.875170 [debug] [Thread-2 (]: SQL status: OK in 0.097 seconds
+[0m07:57:32.883465 [debug] [Thread-2 (]: Using duckdb connection "model.dataton_s1.stg_s1_inversiones"
+[0m07:57:32.874585 [debug] [Thread-3 (]: Writing injected SQL for node "model.dataton_s1.int_s1_declaraciones_normalizadas"
+[0m07:57:32.884833 [debug] [Thread-3 (]: Finished running node model.dataton_s1.int_s1_declaraciones_normalizadas
+[0m07:57:32.883914 [debug] [Thread-2 (]: On model.dataton_s1.stg_s1_inversiones: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_inversiones"} */
+alter view "dataton_s1"."main"."stg_s1_inversiones__dbt_tmp" rename to "stg_s1_inversiones"
+[0m07:57:32.885923 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m07:57:32.887784 [debug] [Thread-2 (]: On model.dataton_s1.stg_s1_inversiones: COMMIT
+[0m07:57:32.892249 [debug] [Thread-2 (]: Using duckdb connection "model.dataton_s1.stg_s1_inversiones"
+[0m07:57:32.880115 [debug] [Thread-1 (]: Writing injected SQL for node "model.dataton_s1.int_s1_ingresos_clasificados"
+[0m07:57:32.893684 [debug] [Thread-1 (]: Finished running node model.dataton_s1.int_s1_ingresos_clasificados
+[0m07:57:32.888330 [debug] [Thread-3 (]: Began running node model.dataton_s1.s1_declaraciones_perfil
+[0m07:57:32.894455 [info ] [Thread-3 (]: 14 of 17 START sql table model main.s1_declaraciones_perfil .................... [RUN]
+[0m07:57:32.894994 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dataton_s1.int_s1_declaraciones_normalizadas, now model.dataton_s1.s1_declaraciones_perfil)
+[0m07:57:32.895487 [debug] [Thread-3 (]: Began compiling node model.dataton_s1.s1_declaraciones_perfil
+[0m07:57:32.892742 [debug] [Thread-2 (]: On model.dataton_s1.stg_s1_inversiones: COMMIT
+[0m07:57:32.901053 [debug] [Thread-3 (]: Writing injected SQL for node "model.dataton_s1.s1_declaraciones_perfil"
+[0m07:57:32.901782 [debug] [Thread-1 (]: Began running node model.dataton_s1.audit_s1_ingresos_rechazados
+[0m07:57:32.902762 [debug] [Thread-3 (]: Began executing node model.dataton_s1.s1_declaraciones_perfil
+[0m07:57:32.912413 [debug] [Thread-2 (]: SQL status: OK in 0.010 seconds
+[0m07:57:32.915050 [debug] [Thread-2 (]: Using duckdb connection "model.dataton_s1.stg_s1_inversiones"
+[0m07:57:32.915638 [debug] [Thread-2 (]: On model.dataton_s1.stg_s1_inversiones: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_inversiones"} */
+
+      drop view if exists "dataton_s1"."main"."stg_s1_inversiones__dbt_backup" cascade
+    
+[0m07:57:32.903477 [info ] [Thread-1 (]: 15 of 17 START sql table model main.audit_s1_ingresos_rechazados ............... [RUN]
+[0m07:57:32.916423 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dataton_s1.int_s1_ingresos_clasificados, now model.dataton_s1.audit_s1_ingresos_rechazados)
+[0m07:57:32.916878 [debug] [Thread-1 (]: Began compiling node model.dataton_s1.audit_s1_ingresos_rechazados
+[0m07:57:32.921468 [debug] [Thread-1 (]: Writing injected SQL for node "model.dataton_s1.audit_s1_ingresos_rechazados"
+[0m07:57:32.941158 [debug] [Thread-3 (]: Writing runtime sql for node "model.dataton_s1.s1_declaraciones_perfil"
+[0m07:57:32.941886 [debug] [Thread-2 (]: SQL status: OK in 0.026 seconds
+[0m07:57:32.943394 [debug] [Thread-2 (]: On model.dataton_s1.stg_s1_inversiones: Close
+[0m07:57:32.943830 [debug] [Thread-1 (]: Began executing node model.dataton_s1.audit_s1_ingresos_rechazados
+[0m07:57:32.944345 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8f6e4bba-426e-447b-a94f-b1a41709ea30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77f8300f2210>]}
+[0m07:57:32.944858 [debug] [Thread-3 (]: Using duckdb connection "model.dataton_s1.s1_declaraciones_perfil"
+[0m07:57:32.948735 [debug] [Thread-1 (]: Writing runtime sql for node "model.dataton_s1.audit_s1_ingresos_rechazados"
+[0m07:57:32.949806 [info ] [Thread-2 (]: 11 of 17 OK created sql view model main.stg_s1_inversiones ..................... [[32mOK[0m in 0.21s]
+[0m07:57:32.950400 [debug] [Thread-3 (]: On model.dataton_s1.s1_declaraciones_perfil: BEGIN
+[0m07:57:32.951458 [debug] [Thread-2 (]: Finished running node model.dataton_s1.stg_s1_inversiones
+[0m07:57:32.952000 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m07:57:32.952458 [debug] [Thread-2 (]: Began running node model.dataton_s1.s1_ingresos_limpios
+[0m07:57:32.952849 [debug] [Thread-1 (]: Using duckdb connection "model.dataton_s1.audit_s1_ingresos_rechazados"
+[0m07:57:32.953518 [info ] [Thread-2 (]: 16 of 17 START sql table model main.s1_ingresos_limpios ........................ [RUN]
+[0m07:57:32.953934 [debug] [Thread-1 (]: On model.dataton_s1.audit_s1_ingresos_rechazados: BEGIN
+[0m07:57:32.954268 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m07:57:32.954650 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dataton_s1.stg_s1_inversiones, now model.dataton_s1.s1_ingresos_limpios)
+[0m07:57:32.955049 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:57:32.955529 [debug] [Thread-3 (]: Using duckdb connection "model.dataton_s1.s1_declaraciones_perfil"
+[0m07:57:32.955868 [debug] [Thread-2 (]: Began compiling node model.dataton_s1.s1_ingresos_limpios
+[0m07:57:32.956406 [debug] [Thread-3 (]: On model.dataton_s1.s1_declaraciones_perfil: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.s1_declaraciones_perfil"} */
+
+  
+    
+    
+
+    create  table
+      "dataton_s1"."main"."s1_declaraciones_perfil__dbt_tmp"
+  
+    as (
+      
+
+with __dbt__cte__int_s1_declaraciones_normalizadas as (
+
+
+with source as (
+    select * from "dataton_s1"."main"."stg_s1_declaraciones"
+),
+
+normalizado as (
+    select
+        id,
+        filename as archivo_origen,
+        -- Normalización de Institución
+        trim(regexp_replace(
+            upper(
+                replace(replace(replace(replace(replace(institucion, 
+                'Á', 'A'), 'É', 'E'), 'Í', 'I'), 'Ó', 'O'), 'Ú', 'U')
+            ), 
+            '\s+', ' ', 'g' -- Reemplazar múltiples espacios por uno solo
+        )) as institucion_clean,
+        
+        -- Mantener valor original por si acaso
+        institucion as institucion_original,
+        
+        -- Normalización de Estado (aunque suele venir bien, aseguramos)
+        upper(trim(state)) as state_clean,
+        
+        -- Otros campos útiles
+        fecha_actualizacion,
+        tipo_declaracion
+        
+    from source
+)
+
+select * from normalizado
+) select 
+    id,
+    institucion_clean as institucion,
+    state_clean as estado,
+    tipo_declaracion,
+    archivo_origen
+from __dbt__cte__int_s1_declaraciones_normalizadas
+where institucion_clean IS NOT NULL
+    );
+  
+  
+[0m07:57:32.959795 [debug] [Thread-2 (]: Writing injected SQL for node "model.dataton_s1.s1_ingresos_limpios"
+[0m07:57:32.960182 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m07:57:32.961016 [debug] [Thread-1 (]: Using duckdb connection "model.dataton_s1.audit_s1_ingresos_rechazados"
+[0m07:57:32.962143 [debug] [Thread-1 (]: On model.dataton_s1.audit_s1_ingresos_rechazados: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.audit_s1_ingresos_rechazados"} */
+
+  
+    
+    
+
+    create  table
+      "dataton_s1"."main"."audit_s1_ingresos_rechazados__dbt_tmp"
+  
+    as (
+      
+
+with __dbt__cte__int_s1_ingresos_clasificados as (
+
+
+with source as (
+    select * from "dataton_s1"."main"."stg_s1_ingresos"
+),
+
+clasificado as (
+    select 
+        *,
+        CASE 
+            WHEN ingreso_anual_neto < 0 THEN 'Valor Negativo: Ingreso Anual'
+            WHEN ingreso_mensual_neto < 0 THEN 'Valor Negativo: Ingreso Mensual'
+            WHEN remuneracion_mensual_cargo < 0 THEN 'Valor Negativo: Remuneración'
+            WHEN otros_ingresos_mensuales < 0 THEN 'Valor Negativo: Otros Ingresos'
+            WHEN ingreso_anual_neto > 500000000 THEN 'Outlier Extremo: Anual > 500M'
+            WHEN ingreso_mensual_neto > 50000000 THEN 'Outlier Extremo: Mensual > 50M'
+            ELSE 'OK'
+        END as calidad_status
+    from source
+)
+
+select * from clasificado
+) select 
+    id,
+    filename as archivo_origen,
+    ingreso_mensual_neto,
+    ingreso_anual_neto,
+    remuneracion_mensual_cargo,
+    otros_ingresos_mensuales,
+    calidad_status as motivo_rechazo
+from __dbt__cte__int_s1_ingresos_clasificados
+where calidad_status != 'OK'
+    );
+  
+  
+[0m07:57:32.965584 [debug] [Thread-2 (]: Began executing node model.dataton_s1.s1_ingresos_limpios
+[0m07:57:32.978822 [debug] [Thread-2 (]: Writing runtime sql for node "model.dataton_s1.s1_ingresos_limpios"
+[0m07:57:32.981953 [debug] [Thread-2 (]: Using duckdb connection "model.dataton_s1.s1_ingresos_limpios"
+[0m07:57:32.982656 [debug] [Thread-2 (]: On model.dataton_s1.s1_ingresos_limpios: BEGIN
+[0m07:57:32.983275 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m07:57:32.986511 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m07:57:32.987070 [debug] [Thread-2 (]: Using duckdb connection "model.dataton_s1.s1_ingresos_limpios"
+[0m07:57:32.987656 [debug] [Thread-2 (]: On model.dataton_s1.s1_ingresos_limpios: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.s1_ingresos_limpios"} */
+
+  
+    
+    
+
+    create  table
+      "dataton_s1"."main"."s1_ingresos_limpios__dbt_tmp"
+  
+    as (
+      
+
+with __dbt__cte__int_s1_ingresos_clasificados as (
+
+
+with source as (
+    select * from "dataton_s1"."main"."stg_s1_ingresos"
+),
+
+clasificado as (
+    select 
+        *,
+        CASE 
+            WHEN ingreso_anual_neto < 0 THEN 'Valor Negativo: Ingreso Anual'
+            WHEN ingreso_mensual_neto < 0 THEN 'Valor Negativo: Ingreso Mensual'
+            WHEN remuneracion_mensual_cargo < 0 THEN 'Valor Negativo: Remuneración'
+            WHEN otros_ingresos_mensuales < 0 THEN 'Valor Negativo: Otros Ingresos'
+            WHEN ingreso_anual_neto > 500000000 THEN 'Outlier Extremo: Anual > 500M'
+            WHEN ingreso_mensual_neto > 50000000 THEN 'Outlier Extremo: Mensual > 50M'
+            ELSE 'OK'
+        END as calidad_status
+    from source
+)
+
+select * from clasificado
+) select 
+    * exclude (filename, calidad_status)
+from __dbt__cte__int_s1_ingresos_clasificados
+where calidad_status = 'OK'
+    );
+  
+  
+[0m07:57:32.989150 [debug] [Thread-4 (]: SQL status: OK in 0.134 seconds
+[0m07:57:32.993240 [debug] [Thread-4 (]: Using duckdb connection "model.dataton_s1.stg_s1_vehiculos"
+[0m07:57:32.993691 [debug] [Thread-4 (]: On model.dataton_s1.stg_s1_vehiculos: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_vehiculos"} */
+alter view "dataton_s1"."main"."stg_s1_vehiculos" rename to "stg_s1_vehiculos__dbt_backup"
+[0m07:57:32.994440 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m07:57:32.997509 [debug] [Thread-4 (]: Using duckdb connection "model.dataton_s1.stg_s1_vehiculos"
+[0m07:57:32.997947 [debug] [Thread-4 (]: On model.dataton_s1.stg_s1_vehiculos: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_vehiculos"} */
+alter view "dataton_s1"."main"."stg_s1_vehiculos__dbt_tmp" rename to "stg_s1_vehiculos"
+[0m07:57:32.998637 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m07:57:33.000389 [debug] [Thread-4 (]: On model.dataton_s1.stg_s1_vehiculos: COMMIT
+[0m07:57:33.000826 [debug] [Thread-4 (]: Using duckdb connection "model.dataton_s1.stg_s1_vehiculos"
+[0m07:57:33.001235 [debug] [Thread-4 (]: On model.dataton_s1.stg_s1_vehiculos: COMMIT
+[0m07:57:33.004563 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m07:57:33.007168 [debug] [Thread-4 (]: Using duckdb connection "model.dataton_s1.stg_s1_vehiculos"
+[0m07:57:33.007608 [debug] [Thread-4 (]: On model.dataton_s1.stg_s1_vehiculos: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.stg_s1_vehiculos"} */
+
+      drop view if exists "dataton_s1"."main"."stg_s1_vehiculos__dbt_backup" cascade
+    
+[0m07:57:33.016046 [debug] [Thread-4 (]: SQL status: OK in 0.008 seconds
+[0m07:57:33.017658 [debug] [Thread-4 (]: On model.dataton_s1.stg_s1_vehiculos: Close
+[0m07:57:33.018294 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8f6e4bba-426e-447b-a94f-b1a41709ea30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77f831585730>]}
+[0m07:57:33.018981 [info ] [Thread-4 (]: 13 of 17 OK created sql view model main.stg_s1_vehiculos ....................... [[32mOK[0m in 0.21s]
+[0m07:57:33.020157 [debug] [Thread-4 (]: Finished running node model.dataton_s1.stg_s1_vehiculos
+[0m07:57:33.907644 [debug] [Thread-1 (]: SQL status: OK in 0.944 seconds
+[0m07:57:33.914540 [debug] [Thread-1 (]: Using duckdb connection "model.dataton_s1.audit_s1_ingresos_rechazados"
+[0m07:57:33.915193 [debug] [Thread-1 (]: On model.dataton_s1.audit_s1_ingresos_rechazados: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.audit_s1_ingresos_rechazados"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'audit_s1_ingresos_rechazados'
+  
+[0m07:57:33.916622 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m07:57:33.918192 [debug] [Thread-1 (]: Using duckdb connection "model.dataton_s1.audit_s1_ingresos_rechazados"
+[0m07:57:33.918680 [debug] [Thread-1 (]: On model.dataton_s1.audit_s1_ingresos_rechazados: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.audit_s1_ingresos_rechazados"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'audit_s1_ingresos_rechazados'
+  
+[0m07:57:33.920276 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m07:57:33.923838 [debug] [Thread-1 (]: Using duckdb connection "model.dataton_s1.audit_s1_ingresos_rechazados"
+[0m07:57:33.924287 [debug] [Thread-1 (]: On model.dataton_s1.audit_s1_ingresos_rechazados: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.audit_s1_ingresos_rechazados"} */
+alter table "dataton_s1"."main"."audit_s1_ingresos_rechazados" rename to "audit_s1_ingresos_rechazados__dbt_backup"
+[0m07:57:33.925054 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m07:57:33.928695 [debug] [Thread-1 (]: Using duckdb connection "model.dataton_s1.audit_s1_ingresos_rechazados"
+[0m07:57:33.929209 [debug] [Thread-1 (]: On model.dataton_s1.audit_s1_ingresos_rechazados: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.audit_s1_ingresos_rechazados"} */
+alter table "dataton_s1"."main"."audit_s1_ingresos_rechazados__dbt_tmp" rename to "audit_s1_ingresos_rechazados"
+[0m07:57:33.930020 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m07:57:33.936558 [debug] [Thread-1 (]: On model.dataton_s1.audit_s1_ingresos_rechazados: COMMIT
+[0m07:57:33.937239 [debug] [Thread-1 (]: Using duckdb connection "model.dataton_s1.audit_s1_ingresos_rechazados"
+[0m07:57:33.937858 [debug] [Thread-1 (]: On model.dataton_s1.audit_s1_ingresos_rechazados: COMMIT
+[0m07:57:33.944107 [debug] [Thread-1 (]: SQL status: OK in 0.006 seconds
+[0m07:57:33.950591 [debug] [Thread-1 (]: Using duckdb connection "model.dataton_s1.audit_s1_ingresos_rechazados"
+[0m07:57:33.951264 [debug] [Thread-1 (]: On model.dataton_s1.audit_s1_ingresos_rechazados: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.audit_s1_ingresos_rechazados"} */
+
+      drop table if exists "dataton_s1"."main"."audit_s1_ingresos_rechazados__dbt_backup" cascade
+    
+[0m07:57:33.953039 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m07:57:33.954789 [debug] [Thread-1 (]: On model.dataton_s1.audit_s1_ingresos_rechazados: Close
+[0m07:57:33.955659 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8f6e4bba-426e-447b-a94f-b1a41709ea30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77f831565be0>]}
+[0m07:57:33.959573 [info ] [Thread-1 (]: 15 of 17 OK created sql table model main.audit_s1_ingresos_rechazados .......... [[32mOK[0m in 1.04s]
+[0m07:57:33.963670 [debug] [Thread-1 (]: Finished running node model.dataton_s1.audit_s1_ingresos_rechazados
+[0m07:57:34.463634 [debug] [Thread-2 (]: SQL status: OK in 1.475 seconds
+[0m07:57:34.465078 [debug] [Thread-2 (]: Using duckdb connection "model.dataton_s1.s1_ingresos_limpios"
+[0m07:57:34.465594 [debug] [Thread-2 (]: On model.dataton_s1.s1_ingresos_limpios: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.s1_ingresos_limpios"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 's1_ingresos_limpios'
+  
+[0m07:57:34.466754 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m07:57:34.468178 [debug] [Thread-2 (]: Using duckdb connection "model.dataton_s1.s1_ingresos_limpios"
+[0m07:57:34.468754 [debug] [Thread-2 (]: On model.dataton_s1.s1_ingresos_limpios: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.s1_ingresos_limpios"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 's1_ingresos_limpios'
+  
+[0m07:57:34.469722 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m07:57:34.473288 [debug] [Thread-2 (]: Using duckdb connection "model.dataton_s1.s1_ingresos_limpios"
+[0m07:57:34.473851 [debug] [Thread-2 (]: On model.dataton_s1.s1_ingresos_limpios: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.s1_ingresos_limpios"} */
+alter table "dataton_s1"."main"."s1_ingresos_limpios" rename to "s1_ingresos_limpios__dbt_backup"
+[0m07:57:34.474738 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m07:57:34.479803 [debug] [Thread-2 (]: Using duckdb connection "model.dataton_s1.s1_ingresos_limpios"
+[0m07:57:34.480331 [debug] [Thread-2 (]: On model.dataton_s1.s1_ingresos_limpios: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.s1_ingresos_limpios"} */
+alter table "dataton_s1"."main"."s1_ingresos_limpios__dbt_tmp" rename to "s1_ingresos_limpios"
+[0m07:57:34.481170 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m07:57:34.487426 [debug] [Thread-2 (]: On model.dataton_s1.s1_ingresos_limpios: COMMIT
+[0m07:57:34.488000 [debug] [Thread-2 (]: Using duckdb connection "model.dataton_s1.s1_ingresos_limpios"
+[0m07:57:34.488438 [debug] [Thread-2 (]: On model.dataton_s1.s1_ingresos_limpios: COMMIT
+[0m07:57:34.521167 [debug] [Thread-2 (]: SQL status: OK in 0.032 seconds
+[0m07:57:34.529529 [debug] [Thread-2 (]: Using duckdb connection "model.dataton_s1.s1_ingresos_limpios"
+[0m07:57:34.530095 [debug] [Thread-2 (]: On model.dataton_s1.s1_ingresos_limpios: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.s1_ingresos_limpios"} */
+
+      drop table if exists "dataton_s1"."main"."s1_ingresos_limpios__dbt_backup" cascade
+    
+[0m07:57:34.537015 [debug] [Thread-2 (]: SQL status: OK in 0.006 seconds
+[0m07:57:34.538751 [debug] [Thread-2 (]: On model.dataton_s1.s1_ingresos_limpios: Close
+[0m07:57:34.539540 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8f6e4bba-426e-447b-a94f-b1a41709ea30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77f8300f42c0>]}
+[0m07:57:34.541441 [info ] [Thread-2 (]: 16 of 17 OK created sql table model main.s1_ingresos_limpios ................... [[32mOK[0m in 1.58s]
+[0m07:57:34.542135 [debug] [Thread-2 (]: Finished running node model.dataton_s1.s1_ingresos_limpios
+[0m07:57:37.480457 [debug] [Thread-3 (]: SQL status: OK in 4.520 seconds
+[0m07:57:37.481559 [debug] [Thread-3 (]: Using duckdb connection "model.dataton_s1.s1_declaraciones_perfil"
+[0m07:57:37.481986 [debug] [Thread-3 (]: On model.dataton_s1.s1_declaraciones_perfil: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.s1_declaraciones_perfil"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 's1_declaraciones_perfil'
+  
+[0m07:57:37.483653 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m07:57:37.485193 [debug] [Thread-3 (]: Using duckdb connection "model.dataton_s1.s1_declaraciones_perfil"
+[0m07:57:37.485545 [debug] [Thread-3 (]: On model.dataton_s1.s1_declaraciones_perfil: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.s1_declaraciones_perfil"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 's1_declaraciones_perfil'
+  
+[0m07:57:37.486336 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m07:57:37.488845 [debug] [Thread-3 (]: Using duckdb connection "model.dataton_s1.s1_declaraciones_perfil"
+[0m07:57:37.489177 [debug] [Thread-3 (]: On model.dataton_s1.s1_declaraciones_perfil: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.s1_declaraciones_perfil"} */
+alter table "dataton_s1"."main"."s1_declaraciones_perfil" rename to "s1_declaraciones_perfil__dbt_backup"
+[0m07:57:37.489814 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m07:57:37.491848 [debug] [Thread-3 (]: Using duckdb connection "model.dataton_s1.s1_declaraciones_perfil"
+[0m07:57:37.492170 [debug] [Thread-3 (]: On model.dataton_s1.s1_declaraciones_perfil: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.s1_declaraciones_perfil"} */
+alter table "dataton_s1"."main"."s1_declaraciones_perfil__dbt_tmp" rename to "s1_declaraciones_perfil"
+[0m07:57:37.492759 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m07:57:37.494084 [debug] [Thread-3 (]: On model.dataton_s1.s1_declaraciones_perfil: COMMIT
+[0m07:57:37.494394 [debug] [Thread-3 (]: Using duckdb connection "model.dataton_s1.s1_declaraciones_perfil"
+[0m07:57:37.494683 [debug] [Thread-3 (]: On model.dataton_s1.s1_declaraciones_perfil: COMMIT
+[0m07:57:37.516780 [debug] [Thread-3 (]: SQL status: OK in 0.022 seconds
+[0m07:57:37.518989 [debug] [Thread-3 (]: Using duckdb connection "model.dataton_s1.s1_declaraciones_perfil"
+[0m07:57:37.519338 [debug] [Thread-3 (]: On model.dataton_s1.s1_declaraciones_perfil: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.s1_declaraciones_perfil"} */
+
+      drop table if exists "dataton_s1"."main"."s1_declaraciones_perfil__dbt_backup" cascade
+    
+[0m07:57:37.521460 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m07:57:37.522564 [debug] [Thread-3 (]: On model.dataton_s1.s1_declaraciones_perfil: Close
+[0m07:57:37.523016 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8f6e4bba-426e-447b-a94f-b1a41709ea30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77f85ce43bf0>]}
+[0m07:57:37.523523 [info ] [Thread-3 (]: 14 of 17 OK created sql table model main.s1_declaraciones_perfil ............... [[32mOK[0m in 4.63s]
+[0m07:57:37.523983 [debug] [Thread-3 (]: Finished running node model.dataton_s1.s1_declaraciones_perfil
+[0m07:57:37.524619 [debug] [Thread-4 (]: Began running node model.dataton_s1.s1_dataset_maestro
+[0m07:57:37.525038 [info ] [Thread-4 (]: 17 of 17 START sql table model main.s1_dataset_maestro ......................... [RUN]
+[0m07:57:37.525456 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dataton_s1.stg_s1_vehiculos, now model.dataton_s1.s1_dataset_maestro)
+[0m07:57:37.525789 [debug] [Thread-4 (]: Began compiling node model.dataton_s1.s1_dataset_maestro
+[0m07:57:37.528132 [debug] [Thread-4 (]: Writing injected SQL for node "model.dataton_s1.s1_dataset_maestro"
+[0m07:57:37.528637 [debug] [Thread-4 (]: Began executing node model.dataton_s1.s1_dataset_maestro
+[0m07:57:37.531074 [debug] [Thread-4 (]: Writing runtime sql for node "model.dataton_s1.s1_dataset_maestro"
+[0m07:57:37.531557 [debug] [Thread-4 (]: Using duckdb connection "model.dataton_s1.s1_dataset_maestro"
+[0m07:57:37.532115 [debug] [Thread-4 (]: On model.dataton_s1.s1_dataset_maestro: BEGIN
+[0m07:57:37.532459 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m07:57:37.533108 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m07:57:37.533425 [debug] [Thread-4 (]: Using duckdb connection "model.dataton_s1.s1_dataset_maestro"
+[0m07:57:37.533748 [debug] [Thread-4 (]: On model.dataton_s1.s1_dataset_maestro: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.s1_dataset_maestro"} */
+
+  
+    
+    
+
+    create  table
+      "dataton_s1"."main"."s1_dataset_maestro__dbt_tmp"
+  
+    as (
+      
+
+select 
+    -- Identificadores
+    i.id,
+    p.archivo_origen,
+
+    -- Dimensiones Demográficas (Normalizadas)
+    COALESCE(p.institucion, 'DESCONOCIDO') as institucion,
+    COALESCE(p.estado, i.state) as estado, -- Usar normalizado, fallback al original
+    p.tipo_declaracion,
+
+    -- Métricas Financieras (Limpias)
+    i.remuneracion_mensual_cargo,
+    i.otros_ingresos_mensuales,
+    i.ingreso_mensual_neto,
+    i.ingreso_anual_neto
+
+from "dataton_s1"."main"."s1_ingresos_limpios" i
+left join "dataton_s1"."main"."s1_declaraciones_perfil" p
+    on i.id = p.id
+    );
+  
+  
+[0m07:57:38.727817 [debug] [Thread-4 (]: SQL status: OK in 1.194 seconds
+[0m07:57:38.728893 [debug] [Thread-4 (]: Using duckdb connection "model.dataton_s1.s1_dataset_maestro"
+[0m07:57:38.729232 [debug] [Thread-4 (]: On model.dataton_s1.s1_dataset_maestro: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.s1_dataset_maestro"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 's1_dataset_maestro'
+  
+[0m07:57:38.743083 [debug] [Thread-4 (]: SQL status: OK in 0.013 seconds
+[0m07:57:38.744170 [debug] [Thread-4 (]: Using duckdb connection "model.dataton_s1.s1_dataset_maestro"
+[0m07:57:38.744509 [debug] [Thread-4 (]: On model.dataton_s1.s1_dataset_maestro: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.s1_dataset_maestro"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 's1_dataset_maestro'
+  
+[0m07:57:38.745363 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m07:57:38.747747 [debug] [Thread-4 (]: Using duckdb connection "model.dataton_s1.s1_dataset_maestro"
+[0m07:57:38.748152 [debug] [Thread-4 (]: On model.dataton_s1.s1_dataset_maestro: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.s1_dataset_maestro"} */
+alter table "dataton_s1"."main"."s1_dataset_maestro" rename to "s1_dataset_maestro__dbt_backup"
+[0m07:57:38.748888 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m07:57:38.751978 [debug] [Thread-4 (]: Using duckdb connection "model.dataton_s1.s1_dataset_maestro"
+[0m07:57:38.752458 [debug] [Thread-4 (]: On model.dataton_s1.s1_dataset_maestro: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.s1_dataset_maestro"} */
+alter table "dataton_s1"."main"."s1_dataset_maestro__dbt_tmp" rename to "s1_dataset_maestro"
+[0m07:57:38.753194 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m07:57:38.755243 [debug] [Thread-4 (]: On model.dataton_s1.s1_dataset_maestro: COMMIT
+[0m07:57:38.755577 [debug] [Thread-4 (]: Using duckdb connection "model.dataton_s1.s1_dataset_maestro"
+[0m07:57:38.755873 [debug] [Thread-4 (]: On model.dataton_s1.s1_dataset_maestro: COMMIT
+[0m07:57:39.151431 [debug] [Thread-4 (]: SQL status: OK in 0.395 seconds
+[0m07:57:39.153464 [debug] [Thread-4 (]: Using duckdb connection "model.dataton_s1.s1_dataset_maestro"
+[0m07:57:39.153785 [debug] [Thread-4 (]: On model.dataton_s1.s1_dataset_maestro: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "dataton_s1", "target_name": "dev", "node_id": "model.dataton_s1.s1_dataset_maestro"} */
+
+      drop table if exists "dataton_s1"."main"."s1_dataset_maestro__dbt_backup" cascade
+    
+[0m07:57:39.156097 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m07:57:39.157141 [debug] [Thread-4 (]: On model.dataton_s1.s1_dataset_maestro: Close
+[0m07:57:39.157598 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8f6e4bba-426e-447b-a94f-b1a41709ea30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77f8314f26c0>]}
+[0m07:57:39.158174 [info ] [Thread-4 (]: 17 of 17 OK created sql table model main.s1_dataset_maestro .................... [[32mOK[0m in 1.63s]
+[0m07:57:39.158643 [debug] [Thread-4 (]: Finished running node model.dataton_s1.s1_dataset_maestro
+[0m07:57:39.166312 [debug] [MainThread]: Using duckdb connection "master"
+[0m07:57:39.166624 [debug] [MainThread]: On master: BEGIN
+[0m07:57:39.166914 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m07:57:39.167504 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m07:57:39.167776 [debug] [MainThread]: On master: COMMIT
+[0m07:57:39.168040 [debug] [MainThread]: Using duckdb connection "master"
+[0m07:57:39.168288 [debug] [MainThread]: On master: COMMIT
+[0m07:57:39.168680 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m07:57:39.168952 [debug] [MainThread]: On master: Close
+[0m07:57:39.169288 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m07:57:39.169527 [debug] [MainThread]: Connection 'model.dataton_s1.audit_s1_ingresos_rechazados' was properly closed.
+[0m07:57:39.169756 [debug] [MainThread]: Connection 'model.dataton_s1.s1_ingresos_limpios' was properly closed.
+[0m07:57:39.169975 [debug] [MainThread]: Connection 'model.dataton_s1.s1_declaraciones_perfil' was properly closed.
+[0m07:57:39.170205 [debug] [MainThread]: Connection 'model.dataton_s1.s1_dataset_maestro' was properly closed.
+[0m07:57:39.170540 [info ] [MainThread]: 
+[0m07:57:39.170852 [info ] [MainThread]: Finished running 4 table models, 13 view models in 0 hours 0 minutes and 7.22 seconds (7.22s).
+[0m07:57:39.173019 [debug] [MainThread]: Command end result
+[0m07:57:39.192569 [debug] [MainThread]: Wrote artifact WritableManifest to /home/arkade/Documents/github/dataton-2025/system_1/dbt_project/target/manifest.json
+[0m07:57:39.194122 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/arkade/Documents/github/dataton-2025/system_1/dbt_project/target/semantic_manifest.json
+[0m07:57:39.199040 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/arkade/Documents/github/dataton-2025/system_1/dbt_project/target/run_results.json
+[0m07:57:39.199455 [info ] [MainThread]: 
+[0m07:57:39.199873 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m07:57:39.200252 [info ] [MainThread]: 
+[0m07:57:39.200556 [info ] [MainThread]: Done. PASS=17 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=17
+[0m07:57:39.201309 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 7.921974, "process_in_blocks": "11560", "process_kernel_time": 3.599489, "process_mem_max_rss": "1697432", "process_out_blocks": "549488", "process_user_time": 55.698555}
+[0m07:57:39.201670 [debug] [MainThread]: Command `dbt run` succeeded at 07:57:39.201596 after 7.92 seconds
+[0m07:57:39.201988 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77f851583500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77f8514a9310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77f85119c440>]}
+[0m07:57:39.202309 [debug] [MainThread]: Flushing usage events
+[0m07:57:39.544262 [debug] [MainThread]: An error was encountered while trying to flush usage events
