@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import JsonResponse
 from core.supabase_client import supabase
 
 def index(request):
@@ -8,11 +9,23 @@ def index(request):
     - Buscador
     - Resultados por institucion
     """
+    # Initially empty, waiting for map selection
     context = {
-        # Placeholder data for the template
         'institutions': [], 
     }
     return render(request, 'dashboard/index.html', context)
+
+def get_institutions(request):
+    entidad_cd = request.GET.get('entidad_cd')
+    institutions = []
+    if supabase and entidad_cd:
+        try:
+            response = supabase.table('resumen_declaraciones_institucion_anual').select("*").eq('entidad_cd', entidad_cd).order('total_declaraciones', desc=True).execute()
+            institutions = response.data
+        except Exception as e:
+            print(f"Error fetching data from Supabase: {e}")
+    
+    return JsonResponse({'institutions': institutions})
 
 def institution_detail(request, institution_name):
     """
