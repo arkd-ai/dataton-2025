@@ -1,0 +1,7 @@
+dataton_s1:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: '/home/arkade/Documents/github/dataton-2025/system_1/csv_outputs/dataton_s1.duckdb'
+      threads: 4
