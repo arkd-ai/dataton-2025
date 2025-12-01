@@ -31,19 +31,10 @@
     <!-- Navbar / Search Bar -->
     <header class="bg-pdn-primary shadow p-4 flex items-center justify-between text-white">
         <div class="flex items-center space-x-4 w-full max-w-3xl">
-            <div class="flex space-x-1">
-                <span class="w-3 h-3 rounded-full bg-red-500"></span>
-                <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
-                <span class="w-3 h-3 rounded-full bg-green-500"></span>
-            </div>
-            <!-- Search Input -->
-            <div class="relative flex-1">
-                <input type="text" placeholder="Buscar..." class="w-full border rounded-full py-2 px-4 pl-10 bg-white/10 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-pdn-secondary">
-                <svg class="w-5 h-5 text-gray-300 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-            </div>
             <button class="p-2 hover:bg-pdn-secondary/50 rounded text-white">
                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </button>
+            <h1 class="text-xl font-bold">Buscador de anomalías por estado e institución</h1>
         </div>
     </header>
 
@@ -67,7 +58,7 @@
 
             <div id="results-container" class="space-y-4">
                 {% for institution in institutions %}
-                <a href="{% url 'institution_detail' institution.institucion %}" class="block bg-white border border-gray-300 rounded p-4 hover:shadow-md hover:border-pdn-secondary transition">
+                <a href="{% url 'institution_detail' institution.institucion %}?entidad_cd={{ institution.entidad_cd }}" class="block bg-white border border-gray-300 rounded p-4 hover:shadow-md hover:border-pdn-secondary transition">
                     <div class="flex justify-between">
                         <span class="font-bold text-lg text-pdn-primary">{{ institution.total_declaraciones }}</span>
                         <span class="text-gray-600">{{ institution.institucion }}</span>
@@ -111,7 +102,7 @@
                         
                         data.institutions.forEach(inst => {
                             const item = document.createElement('a');
-                            item.href = `/institution/${encodeURIComponent(inst.institucion)}/`;
+                            item.href = `/institution/${encodeURIComponent(inst.institucion)}/?entidad_cd=${encodeURIComponent(inst.entidad_cd)}`;
                             item.className = 'block bg-white border border-gray-300 rounded p-4 hover:shadow-md hover:border-pdn-secondary transition mb-4';
                             item.innerHTML = `
                                 <div class="flex justify-between">
