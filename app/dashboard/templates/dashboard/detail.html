@@ -1,0 +1,149 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Detalle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                pdn: {
+                  primary: '#4A148C', // Deep Purple
+                  secondary: '#AB47BC', // Lighter Purple
+                  accent: '#E1BEE7', // Very light purple
+                  light: '#F3E5F5', // Background light
+                  text: '#6A1B9A', // Purple Text
+                }
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 h-screen flex flex-col">
+
+    <!-- Navbar / Search Bar -->
+    <header class="bg-pdn-primary shadow p-4 flex items-center justify-between text-white">
+        <div class="flex items-center space-x-4">
+            <!-- Back Button -->
+            <a href="{% url 'index' %}" class="flex items-center text-white hover:text-pdn-accent transition">
+                <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                <span class="font-semibold">Regresar al inicio</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 flex overflow-hidden">
+        
+        <!-- Declarations List Section -->
+        <section class="w-1/2 p-6 overflow-y-auto border-r bg-white relative">
+             <div class="absolute top-2 left-2 bg-gray-200 text-xs px-2 py-1 rounded opacity-70">
+                Detalle de las declaraciones de {{ institution_name }}
+            </div>
+            <div class="space-y-4 mt-6">
+                {% for declaration in declarations %}
+                <div 
+                    class="declaration-item cursor-pointer block bg-white border-2 border-gray-300 hover:border-pdn-primary transition rounded p-4"
+                    data-nombre="{{ declaration.NOMBRE|default:'' }}"
+                    data-primer-apellido="{{ declaration.PRIMER_APELLIDO|default:'' }}"
+                    data-segundo-apellido="{{ declaration.SEGUNDO_APELLIDO|default:'' }}"
+                    data-remuneracion="{{ declaration.REMUNERACION_ANUAL_CARGO_PUBLICO|default:0 }}"
+                    data-ingreso-anual="{{ declaration.INGRESO_ANUAL_NETO_DECLARANTE|default:0 }}"
+                >
+                     <div class="flex justify-between items-start">
+                        <div class="flex items-center space-x-3">
+                            <span class="font-bold text-lg text-pdn-primary min-w-[20px]">{{ page_offset|add:forloop.counter }}</span>
+                            <div>
+                                <div class="font-bold text-gray-800">
+                                    Nombre: {{ declaration.NOMBRE|default:"" }} {{ declaration.PRIMER_APELLIDO|default:"" }} {{ declaration.SEGUNDO_APELLIDO|default:"" }}
+                                </div>
+                                <div class="text-sm text-gray-500">
+                                    CURP: {{ declaration.CURP|default:"N/D" }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                             <div class="text-sm font-semibold text-green-600">
+                                ${{ declaration.diferencia_ingresos|default:0 }}
+                             </div>
+                             <span class="text-xs text-gray-400">
+                                {% if declaration.DECLARACION_ID %}
+                                    ID: {{ declaration.DECLARACION_ID }}
+                                {% elif declaration.ID %}
+                                    ID: {{ declaration.ID }}
+                                {% elif declaration.id %}
+                                    ID: {{ declaration.id }}
+                                {% endif %}
+                            </span>
+                            <div class="mt-2">
+                                <button disabled class="bg-red-100 text-red-500 text-xs px-2 py-1 rounded opacity-50 cursor-not-allowed hover:bg-red-200 transition">
+                                    Reportar declaración
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% empty %}
+                <div class="p-4 text-gray-500 text-center">No se encontraron declaraciones.</div>
+                {% endfor %}
+            </div>
+            
+            <!-- Pagination -->
+            {% if total_pages > 1 %}
+            <div class="mt-6 flex justify-center items-center space-x-2 text-sm">
+                {% if has_previous %}
+                <a href="?entidad_cd={{ entidad_cd }}&page={{ previous_page_num }}" class="px-3 py-2 border rounded bg-white hover:bg-gray-50 text-pdn-primary">
+                    Anterior
+                </a>
+                {% else %}
+                <span class="px-3 py-2 border rounded bg-gray-100 text-gray-400 cursor-not-allowed">
+                    Anterior
+                </span>
+                {% endif %}
+
+                <span class="px-3 py-2 text-gray-600">
+                    Página {{ current_page }} de {{ total_pages }}
+                </span>
+
+                {% if has_next %}
+                <a href="?entidad_cd={{ entidad_cd }}&page={{ next_page_num }}" class="px-3 py-2 border rounded bg-white hover:bg-gray-50 text-pdn-primary">
+                    Siguiente
+                </a>
+                {% else %}
+                <span class="px-3 py-2 border rounded bg-gray-100 text-gray-400 cursor-not-allowed">
+                    Siguiente
+                </span>
+                {% endif %}
+            </div>
+            {% endif %}
+        </section>
+
+        <!-- Stacked Bar Section -->
+        <section class="w-1/2 p-6 flex flex-col justify-center">
+            <div class="mb-4 bg-white p-2 inline-block rounded shadow text-sm font-bold text-gray-700 self-start">
+                Composición de la Declaración seleccionada
+            </div>
+            
+            <div class="w-full h-96 bg-white rounded-lg p-4 shadow-sm border border-gray-200 flex items-center justify-center">
+                <canvas id="compositionChart"></canvas>
+            </div>
+            <div id="chart-placeholder" class="text-gray-500 text-sm text-center mt-2">
+                Selecciona una declaración de la lista para ver su composición.
+            </div>
+        </section>
+
+    </main>
+    
+
+    <script type="module">
+        import { initializeDashboard } from "{% static 'dashboard/js/chart_logic.js' %}";
+        document.addEventListener('DOMContentLoaded', initializeDashboard);
+    </script>
+</body>
+</html>

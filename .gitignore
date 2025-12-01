@@ -21,3 +21,4 @@ dbt_project/logs/
 .vscode/
 .idea/
 .DS_Store
+*.env
