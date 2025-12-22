@@ -364,7 +364,7 @@ export default function Dashboard() {
                                 <RechartsTooltip
                                     contentStyle={{ backgroundColor: '#0f172a', borderColor: '#334155', color: '#f1f5f9' }}
                                     itemStyle={{ color: '#f1f5f9' }}
-                                    formatter={(value: number) => [`$${(value || 0).toLocaleString()}`, "Ingreso Mensual"]}
+                                    formatter={(value: any) => [`$${(Number(value) || 0).toLocaleString()}`, "Ingreso Mensual"]}
                                     labelStyle={{ color: '#94a3b8' }}
                                 />
                                 <Bar dataKey="TOTAL_INGRESOS_MENSUALES_NETOS" fill="#3b82f6" radius={[4, 4, 0, 0]}>
