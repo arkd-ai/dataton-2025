@@ -19,6 +19,31 @@ interface MexicoMapProps {
     selectedStateCode: string | null;
 }
 
+function InvalidateMapSize() {
+    const map = useMap();
+
+    useEffect(() => {
+        if (typeof window === 'undefined') return;
+
+        const resizeObserver = new ResizeObserver(() => {
+            // Use a small delay to ensure any CSS transitions are accounted for
+            const timer = setTimeout(() => {
+                map.invalidateSize();
+            }, 250);
+            return () => clearTimeout(timer);
+        });
+
+        const container = map.getContainer();
+        resizeObserver.observe(container);
+
+        return () => {
+            resizeObserver.disconnect();
+        };
+    }, [map]);
+
+    return null;
+}
+
 export default function MexicoMap({ onStateSelect, selectedStateCode }: MexicoMapProps) {
     const [geoData, setGeoData] = useState<any>(null);
 
@@ -100,12 +125,14 @@ export default function MexicoMap({ onStateSelect, selectedStateCode }: MexicoMa
             center={[23.6345, -102.5528]}
             zoom={5}
             scrollWheelZoom={false}
-            className="w-full h-full bg-slate-950/50 rounded-xl"
-            style={{ background: 'transparent' }}
+            className="w-full h-[400px] md:h-full rounded-xl"
+            style={{ minHeight: '300px', height: '100%', width: '100%', background: 'transparent' }}
         >
+            <InvalidateMapSize />
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org">OpenStreetMap</a>'
-                url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                crossOrigin="anonymous"
             />
             {geoData && (
                 <GeoJSON
