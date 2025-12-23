@@ -5,6 +5,8 @@ import { Providers } from "@/components/Providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Datatón 2025 Dashboard",
   description: "Análisis de Datos Anticorrupción",
